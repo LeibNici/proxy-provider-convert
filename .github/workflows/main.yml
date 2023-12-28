@@ -9,6 +9,10 @@ jobs:
   request:
     runs-on: ubuntu-latest
     steps:
+    
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+    
       - name: Fetch Data
         run: |
           curl -o test.yaml https://proxy-provider-converter.vercel.app/api/convert?url=https%3A%2F%2Fpqjc.site%2Fapi%2Fv1%2Fclient%2Fsubscribe%3Ftoken%3D2a07deed699a160eabdaca539e050d14%26flag%3Dclash-meta&target=clash
@@ -19,3 +23,10 @@ jobs:
         with:
           name: test.yaml
           path: test.yaml
+
+      - name: Commit Changes
+        run: |
+          git config --global user.name "action bot"
+          git config --global user.email "test@gmail.com"
+          git add test.yaml
+          git commit -m "Update test.yaml"
