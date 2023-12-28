@@ -1,8 +1,9 @@
 name: 机场订阅转换
+
 on:
-  pull_request:
+  push:
     branches:
-      - main
+      - main  # 可以根据你的需求修改分支名称
       
 jobs:
   request:
