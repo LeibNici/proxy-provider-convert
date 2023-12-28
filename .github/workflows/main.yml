@@ -1,9 +1,8 @@
 name: 机场订阅转换
 
 on:
-  push:
-    branches:
-      - main  # 可以根据你的需求修改分支名称
+  schedule:
+    - cron: "0 */3 * * *"
       
 jobs:
   request:
