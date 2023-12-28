@@ -11,4 +11,4 @@ jobs:
     steps:
       - name: Fetch Data
         run: |
-          curl -o ./home/test.yaml https://proxy-provider-converter.vercel.app/api/convert?url=https%3A%2F%2Fpqjc.site%2Fapi%2Fv1%2Fclient%2Fsubscribe%3Ftoken%3D2a07deed699a160eabdaca539e050d14%26flag%3Dclash-meta&target=clash
+          curl -o test.yaml https://proxy-provider-converter.vercel.app/api/convert?url=https%3A%2F%2Fpqjc.site%2Fapi%2Fv1%2Fclient%2Fsubscribe%3Ftoken%3D2a07deed699a160eabdaca539e050d14%26flag%3Dclash-meta&target=clash
