@@ -1,5 +1,5 @@
 proxies:
-  - name: 剩余流量：843.7 GB
+  - name: 剩余流量：843.68 GB
     type: vless
     server: 108.181.23.247
     port: 443
