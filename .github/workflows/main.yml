@@ -7,16 +7,13 @@ on:
   schedule:
     - cron: "0 */3 * * *"
 
-env:
-  sub_url: "sjckanekvna;lken"
-      
 jobs:
   request:
     runs-on: ubuntu-latest
     steps:
 
       - name: Read environment variable
-        run: echo ${{ env.sub_url }}
+        run: echo ${{ secrets.MY_SUB_URL }}
     
       - name: Checkout Repository
         uses: actions/checkout@v2
