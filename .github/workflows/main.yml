@@ -1,6 +1,9 @@
 name: 机场订阅转换
 
 on:
+  push:
+    branches:
+      - main
   schedule:
     - cron: "0 */3 * * *"
       
