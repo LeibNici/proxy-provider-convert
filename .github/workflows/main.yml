@@ -13,7 +13,7 @@ jobs:
     steps:
 
       - name: Read environment variable
-        run: echo ${{ env.SUB_URL }}
+        run: echo ${{ env.MY_SUB_URL }}
     
       - name: Checkout Repository
         uses: actions/checkout@v2
