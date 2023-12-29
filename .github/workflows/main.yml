@@ -19,10 +19,16 @@ jobs:
       - name: Use variables
         run: |
           echo "variable from shell environment  : $env_var"
-    
+
+      - name: Run URL encoding
+        run: |
+          echo "Input: $env_var"
+          ENCODED_VALUE=$(node -e "console.log(encodeURIComponent('$env_var'))")
+          echo "Encoded: $ENCODED_VALUE"
+
       - name: Checkout Repository
         uses: actions/checkout@v2
-    
+
       - name: Fetch Data
         run: |
           curl -o test.yaml "https://proxy-provider-converter.vercel.app/api/convert?url=$env_var"
