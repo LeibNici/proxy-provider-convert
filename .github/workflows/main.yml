@@ -18,7 +18,7 @@ jobs:
 
       - name: Use variables
         run: |
-          echo "variable from shell environment : $env_var"
+          echo "variable from shell environment  : $env_var"
     
       - name: Checkout Repository
         uses: actions/checkout@v2
