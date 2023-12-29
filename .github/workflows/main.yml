@@ -7,13 +7,18 @@ on:
   schedule:
     - cron: "0 */3 * * *"
 
+env:
+  # Setting an environment variable with the value of a configuration variable
+  env_var: ${{ vars.MY_SUB_URL }}
+
 jobs:
   request:
     runs-on: ubuntu-latest
     steps:
 
-      - name: Read environment variable
-        run: echo ${{ secrets.MY_SUB_URL }}
+      - name: Use variables
+        run: |
+          echo "variable from shell environment : $env_var"
     
       - name: Checkout Repository
         uses: actions/checkout@v2
