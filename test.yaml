@@ -1,5 +1,5 @@
 proxies:
-  - name: 剩余流量：843.7 GB
+  - name: 剩余流量：840.94 GB
     type: vless
     server: 108.181.23.247
     port: 443
@@ -10,7 +10,7 @@ proxies:
     flow: xtls-rprx-vision
     client-fingerprint: chrome
     servername: usla1.hnkkt.top
-  - name: 距离下次重置剩余：8 天
+  - name: 距离下次重置剩余：7 天
     type: vless
     server: 108.181.23.247
     port: 443
