@@ -6,6 +6,9 @@ on:
       - main
   schedule:
     - cron: "0 */3 * * *"
+
+env:
+  sub_url: "sjckanekvna;lken"
       
 jobs:
   request:
@@ -13,7 +16,7 @@ jobs:
     steps:
 
       - name: Read environment variable
-        run: echo ${{ env.MY_SUB_URL }}
+        run: echo ${{ env.sub_url }}
     
       - name: Checkout Repository
         uses: actions/checkout@v2
