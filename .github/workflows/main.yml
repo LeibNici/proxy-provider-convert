@@ -8,6 +8,9 @@ jobs:
   request:
     runs-on: ubuntu-latest
     steps:
+
+      - name: Read environment variable
+        run: echo ${{ env.SUB_URL }}
     
       - name: Checkout Repository
         uses: actions/checkout@v2
