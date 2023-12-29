@@ -8,7 +8,7 @@ on:
     - cron: "0 */3 * * *"
 
 env:
-  sub_url: ${{ vars.SUB_URL }}
+  sub_url: ${{ env.SUB_URL }}
       
 jobs:
   request:
