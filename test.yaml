@@ -1,5 +1,5 @@
 proxies:
-  - name: 剩余流量：829.32 GB
+  - name: 剩余流量：829.31 GB
     type: vless
     server: 108.181.23.247
     port: 443
@@ -155,8 +155,8 @@ proxies:
     servername: usp3.hnkkt.top
   - name: 🇺🇸美国凤凰城04-0.01倍
     type: vless
-    server: 163.123.192.58
-    port: 443
+    server: 36.140.75.206
+    port: 35500
     uuid: f8570585-4cfa-42ba-ba35-7ea41a69edc1
     udp: true
     tls: true
@@ -419,7 +419,7 @@ proxies:
     servername: 52-140-202-168.nhost.00cdn.com
   - name: 🇯🇵AWS日本03 | 双线负载专线-限时1倍
     type: vless
-    server: 36.139.138.6
+    server: 36.140.75.206
     port: 35500
     uuid: f8570585-4cfa-42ba-ba35-7ea41a69edc1
     udp: true
@@ -430,7 +430,7 @@ proxies:
     servername: 18-140-66-207.nhost.00cdn.com
   - name: 🇯🇵AWS日本04 | 双线负载专线-限时1倍
     type: vless
-    server: 36.139.138.6
+    server: 36.140.75.206
     port: 35500
     uuid: f8570585-4cfa-42ba-ba35-7ea41a69edc1
     udp: true
@@ -441,7 +441,7 @@ proxies:
     servername: 18-140-66-207.nhost.00cdn.com
   - name: 🇯🇵AWS日本05 | 双线负载专线-限时1倍
     type: vless
-    server: 36.139.138.6
+    server: 36.140.75.206
     port: 35500
     uuid: f8570585-4cfa-42ba-ba35-7ea41a69edc1
     udp: true
