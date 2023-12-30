@@ -10,7 +10,7 @@ proxies:
     flow: xtls-rprx-vision
     client-fingerprint: chrome
     servername: usla1.hnkkt.top
-  - name: 距离下次重置剩余：6 天
+  - name: 距离下次重置剩余：5 天
     type: vless
     server: 108.181.23.247
     port: 443
