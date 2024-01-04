@@ -1,37 +1,36 @@
 proxies:
-  - name: 剩余流量：800.95 GB
-    type: vless
-    server: 108.181.23.247
+  - name: 剩余流量：798.59 GB
+    server: 205.178.183.97
     port: 443
-    uuid: f8570585-4cfa-42ba-ba35-7ea41a69edc1
     udp: true
-    tls: true
     skip-cert-verify: false
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    servername: usla1.hnkkt.top
+    sni: 18-140-66-207.nhost.00cdn.com
+    type: hysteria2
+    password: f8570585-4cfa-42ba-ba35-7ea41a69edc1
   - name: 距离下次重置剩余：1 天
-    type: vless
-    server: 108.181.23.247
+    server: 205.178.183.97
     port: 443
-    uuid: f8570585-4cfa-42ba-ba35-7ea41a69edc1
     udp: true
-    tls: true
     skip-cert-verify: false
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    servername: usla1.hnkkt.top
+    sni: 18-140-66-207.nhost.00cdn.com
+    type: hysteria2
+    password: f8570585-4cfa-42ba-ba35-7ea41a69edc1
   - name: 套餐到期：2024-07-05
-    type: vless
-    server: 108.181.23.247
+    server: 205.178.183.97
     port: 443
-    uuid: f8570585-4cfa-42ba-ba35-7ea41a69edc1
     udp: true
-    tls: true
     skip-cert-verify: false
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    servername: usla1.hnkkt.top
+    sni: 18-140-66-207.nhost.00cdn.com
+    type: hysteria2
+    password: f8570585-4cfa-42ba-ba35-7ea41a69edc1
+  - name: 🇯🇵日本-hy2
+    server: 205.178.183.97
+    port: 443
+    udp: true
+    skip-cert-verify: false
+    sni: 18-140-66-207.nhost.00cdn.com
+    type: hysteria2
+    password: f8570585-4cfa-42ba-ba35-7ea41a69edc1
   - name: 🇺🇸美国洛杉矶01-0.1倍
     type: vless
     server: 108.181.23.247
