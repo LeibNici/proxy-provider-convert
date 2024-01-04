@@ -1,13 +1,5 @@
 proxies:
-  - name: 剩余流量：798.59 GB
-    server: 205.178.183.97
-    port: 443
-    udp: true
-    skip-cert-verify: false
-    sni: 18-140-66-207.nhost.00cdn.com
-    type: hysteria2
-    password: f8570585-4cfa-42ba-ba35-7ea41a69edc1
-  - name: 距离下次重置剩余：1 天
+  - name: 剩余流量：999.99 GB
     server: 205.178.183.97
     port: 443
     udp: true
