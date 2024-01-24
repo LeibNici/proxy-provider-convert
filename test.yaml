@@ -3,7 +3,7 @@ proxies:
     server: 108.181.23.235
     port: 443
     udp: true
-    skip-cert-verify: false
+    skip-cert-verify: true
     sni: tv.apple.com
     type: hysteria2
     password: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
@@ -11,7 +11,7 @@ proxies:
     server: 108.181.23.235
     port: 443
     udp: true
-    skip-cert-verify: false
+    skip-cert-verify: true
     sni: tv.apple.com
     type: hysteria2
     password: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
@@ -19,7 +19,7 @@ proxies:
     server: 108.181.23.235
     port: 443
     udp: true
-    skip-cert-verify: false
+    skip-cert-verify: true
     sni: tv.apple.com
     type: hysteria2
     password: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
@@ -27,7 +27,7 @@ proxies:
     server: 108.181.23.235
     port: 443
     udp: true
-    skip-cert-verify: false
+    skip-cert-verify: true
     sni: tv.apple.com
     type: hysteria2
     password: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
