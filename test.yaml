@@ -1,5 +1,5 @@
 proxies:
-  - name: 剩余流量：928.44 GB
+  - name: 剩余流量：928.39 GB
     server: 108.181.23.235
     port: 443
     udp: true
@@ -7,7 +7,7 @@ proxies:
     sni: tv.apple.com
     type: hysteria2
     password: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
-  - name: 距离下次重置剩余：11 天
+  - name: 距离下次重置剩余：10 天
     server: 108.181.23.235
     port: 443
     udp: true
@@ -35,40 +35,40 @@ proxies:
     server: 108.181.23.225
     port: 443
     udp: true
-    skip-cert-verify: false
-    sni: 20-24-33-134.nhost.00cdn.com
+    skip-cert-verify: true
+    sni: www.apple.com
     type: hysteria2
     password: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
   - name: 🇺🇸美国洛杉矶03-hy2
     server: 208.87.243.155
     port: 443
     udp: true
-    skip-cert-verify: false
-    sni: 20-24-33-134.nhost.00cdn.com
+    skip-cert-verify: true
+    sni: www.apple.com
     type: hysteria2
     password: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
   - name: 🇺🇸美国洛杉矶04-hy2
     server: 108.181.24.43
     port: 443
     udp: true
-    skip-cert-verify: false
-    sni: 20-24-33-134.nhost.00cdn.com
+    skip-cert-verify: true
+    sni: www.apple.com
     type: hysteria2
     password: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
   - name: 🇺🇸美国洛杉矶05-hy2
     server: 108.181.22.153
     port: 443
     udp: true
-    skip-cert-verify: false
-    sni: 20-24-33-134.nhost.00cdn.com
+    skip-cert-verify: true
+    sni: www.apple.com
     type: hysteria2
     password: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
   - name: 🇯🇵日本-hy2
     server: 205.178.183.97
     port: 443
     udp: true
-    skip-cert-verify: false
-    sni: 18-140-66-207.nhost.00cdn.com
+    skip-cert-verify: true
+    sni: videos.apple.com
     type: hysteria2
     password: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
   - name: 🇺🇸美国洛杉矶01-0.1倍
