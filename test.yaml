@@ -1,5 +1,5 @@
 proxies:
-  - name: 剩余流量：923.83 GB
+  - name: 剩余流量：923.79 GB
     server: 108.181.23.235
     port: 443
     udp: true
@@ -202,7 +202,7 @@ proxies:
     skip-cert-verify: false
     flow: xtls-rprx-vision
     client-fingerprint: ios
-    servername: usp4.hnkkt.top
+    servername: 4c38ac42f3162f31ffb4cf4de32aa76432f42889af0272420dcda1bd47.hnkkt.top
   - name: 🇯🇵日本1
     type: vless
     server: 163.123.195.132
@@ -280,28 +280,6 @@ proxies:
     flow: xtls-rprx-vision
     client-fingerprint: firefox
     servername: pqawsjp6.pqjc.site
-  - name: 🇯🇵日本7 | 高速专线
-    type: vless
-    server: gsawsjp3.aiopen.sbs
-    port: 443
-    uuid: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
-    udp: true
-    tls: true
-    skip-cert-verify: false
-    flow: xtls-rprx-vision
-    client-fingerprint: firefox
-    servername: pqawsjp7.pqjc.site
-  - name: 🇯🇵日本8 | 高速专线
-    type: vless
-    server: gsawsjp4.aiopen.sbs
-    port: 443
-    uuid: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
-    udp: true
-    tls: true
-    skip-cert-verify: false
-    flow: xtls-rprx-vision
-    client-fingerprint: ios
-    servername: pqawsjp8.pqjc.site
   - name: 🇸🇬新加坡1 | 高速专线
     type: vless
     server: pqawssg1.aiopen.sbs
@@ -346,28 +324,6 @@ proxies:
     flow: xtls-rprx-vision
     client-fingerprint: safari
     servername: pqawssg4.pqjc.site
-  - name: 🇯🇵AWS日本01 | 双线负载专线-10倍
-    type: vless
-    server: 120.232.242.13
-    port: 35500
-    uuid: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
-    udp: true
-    tls: true
-    skip-cert-verify: false
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    servername: 18-140-66-207.nhost.00cdn.com
-  - name: 🇯🇵AWS日本02 | 双线负载专线-10倍
-    type: vless
-    server: 120.232.242.13
-    port: 35500
-    uuid: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
-    udp: true
-    tls: true
-    skip-cert-verify: false
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    servername: 18-140-66-207.nhost.00cdn.com
   - name: 🇹🇼台湾
     type: vless
     server: pqhinet1.aiopen.sbs
@@ -545,13 +501,6 @@ proxies:
       headers:
         Host: p6us4.pqjc.buzz
     sni: p6us4.pqjc.buzz
-  - name: 🇯🇵日本1 | 专线-推荐
-    type: trojan
-    server: 120.232.242.13
-    port: 26700
-    password: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
-    udp: true
-    sni: 18-140-66-207.nhost.00cdn.com
   - name: 🇩🇪德国01
     type: trojan
     server: 5.104.108.120
