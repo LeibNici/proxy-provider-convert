@@ -1,5 +1,5 @@
 proxies:
-  - name: 剩余流量：998.52 GB
+  - name: 剩余流量：998.5 GB
     server: 108.181.23.235
     port: 443
     udp: true
@@ -242,7 +242,7 @@ proxies:
     skip-cert-verify: false
     flow: xtls-rprx-vision
     client-fingerprint: ios
-    servername: 45e387158b16267c685cfc7b2253110f9fccff70810586bc3709f8e006b29b.hnkkt.top
+    servername: b9a744256651c0bf5d2d29a160aa39020e74ea041f5179bb6b50.hnkkt.top
   - name: 🇯🇵日本1 | 高速专线
     type: vless
     server: pqjp1.aiopen.sbs
@@ -253,7 +253,7 @@ proxies:
     skip-cert-verify: false
     flow: xtls-rprx-vision
     client-fingerprint: safari
-    servername: 8b7536ad804dce6f5928c1895ac27299a41216a68b42572a99.kbjc.top
+    servername: 01a76289719e20dcc69d4e72830405579a1434d1a68106a7381e3dfe223b2b67e9.kbjc.top
   - name: 🇯🇵日本2 | 高速专线
     type: vless
     server: pqjp2.aiopen.sbs
@@ -264,7 +264,7 @@ proxies:
     skip-cert-verify: false
     flow: xtls-rprx-vision
     client-fingerprint: safari
-    servername: 16bc908d095a9c1c2715dd63195e619c33674631dfa26f2eb0.kbjc.top
+    servername: 74193ec29adbee309a3f38510bafb322f36b145fede38ec1b526395b57.kbjc.top
   - name: 🇯🇵日本3 | 高速专线
     type: vless
     server: pqjp3.aiopen.sbs
@@ -275,7 +275,7 @@ proxies:
     skip-cert-verify: false
     flow: xtls-rprx-vision
     client-fingerprint: ios
-    servername: 78d093a0c0a56ec1c2303a80181afa9e13859067508866cd560edd.kbjc.top
+    servername: 384aee8f923ffa23e49a0c31dd1a261357b2ed78.kbjc.top
   - name: 🇯🇵日本4 | 高速专线
     type: vless
     server: pqjp4.aiopen.sbs
@@ -286,7 +286,7 @@ proxies:
     skip-cert-verify: false
     flow: xtls-rprx-vision
     client-fingerprint: ios
-    servername: 9360a36a11fcc730c241f580f11e2f6bbb7732b97aaf065beb4f5b.kbjc.top
+    servername: 0dcece1e9a530f5fb66aa8494eae170ceb4ede52ebe8779752a5d674e69f0a4b.kbjc.top
   - name: 🇯🇵日本5 | 高速专线
     type: vless
     server: pqjp5.aiopen.sbs
@@ -297,7 +297,7 @@ proxies:
     skip-cert-verify: false
     flow: xtls-rprx-vision
     client-fingerprint: firefox
-    servername: 864b4aae1582c41e776c5f16bb3e823af55b5f.kbjc.top
+    servername: e26accabe2a51c81e126220c7b4e42adee186c9a12df8504e7.kbjc.top
   - name: 🇯🇵日本6 | 高速专线
     type: vless
     server: pqjp6.aiopen.sbs
@@ -308,7 +308,7 @@ proxies:
     skip-cert-verify: false
     flow: xtls-rprx-vision
     client-fingerprint: firefox
-    servername: 727d05539cc092054d469d8b83db932d629f841a364b951e2f4e30630731dd1158a481eaa4f7d6.kbjc.top
+    servername: e7eaebfd6a470b80e5cb0ddf44ae16293b36190d2104dea8f006876c7cecea.kbjc.top
   - name: 🇸🇬新加坡1 | 高速专线
     type: vless
     server: pqsg1.aiopen.sbs
@@ -319,7 +319,7 @@ proxies:
     skip-cert-verify: false
     flow: xtls-rprx-vision
     client-fingerprint: ios
-    servername: f945e5a6a2cae781b3abd2c0cb8939c59897.kbjc.top
+    servername: e3f4fbec29dc849e023f46ec946c3261bcb52e.kbjc.top
   - name: 🇸🇬新加坡2 | 高速专线
     type: vless
     server: pqsg2.aiopen.sbs
@@ -330,7 +330,7 @@ proxies:
     skip-cert-verify: false
     flow: xtls-rprx-vision
     client-fingerprint: safari
-    servername: f048efd3fdf6bdd8e21853f0784f01b8f463d6c047ea77ab58505d13ff658b6938127b558dc9.kbjc.top
+    servername: 7f8ba108ebcbaea0e2ba2e010e1295e2fcceaa9d0646384f676fa5e8cb.kbjc.top
   - name: 🇸🇬新加坡3 | 高速专线
     type: vless
     server: pqsg3.aiopen.sbs
@@ -341,7 +341,7 @@ proxies:
     skip-cert-verify: false
     flow: xtls-rprx-vision
     client-fingerprint: safari
-    servername: 58bc415f205a7682b939bb15d9cb572cf28958c9b8257f09afde8a2ea59cacbcc6.kbjc.top
+    servername: a3dbec9a18896a141f942a4a85512c65d5768734f4fe64a0f2df.kbjc.top
   - name: 🇸🇬新加坡4 | 高速专线
     type: vless
     server: pqsg4.aiopen.sbs
@@ -352,7 +352,7 @@ proxies:
     skip-cert-verify: false
     flow: xtls-rprx-vision
     client-fingerprint: ios
-    servername: 93613e782bb0453efbc1f9ff6e960cff9b21e21710a3cb20ec2c30662b0e.kbjc.top
+    servername: 84c2fc31b2de9fa6e576ef7348b09f69fb73ca9c2a211e72337a3c5dcbcf4c2c.kbjc.top
   - name: 🇸🇬新加坡5 | 高速专线
     type: vless
     server: pqsg5.aiopen.sbs
@@ -363,7 +363,7 @@ proxies:
     skip-cert-verify: false
     flow: xtls-rprx-vision
     client-fingerprint: edge
-    servername: a3248ae95f7719baff7407e2da98aa9b39d3299ceb25.kbjc.top
+    servername: 4c80345997235ed87a1ba82a9d73d93f12cedf5a9f478586e292bb2d822dc1fd03.kbjc.top
   - name: 🇸🇬新加坡6 | 高速专线
     type: vless
     server: pqsg6.aiopen.sbs
@@ -374,7 +374,7 @@ proxies:
     skip-cert-verify: false
     flow: xtls-rprx-vision
     client-fingerprint: safari
-    servername: d97ce8cb3c54498713c769b7b593efddb21a4f90649f77611c.kbjc.top
+    servername: 6be5cd74516cd78bc5135892b23e66ed82e1734655a1d7fc.kbjc.top
   - name: 🇹🇼台湾
     type: vless
     server: pqhinet1.aiopen.sbs
