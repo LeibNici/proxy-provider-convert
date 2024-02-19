@@ -109,7 +109,7 @@ proxy-groups:
     interval: 300
     tolerance: 50
  
-  - name: Emby
+  - name: ❤️ Emby公益服
     type: select
     proxies:
       - DIRECT
@@ -274,7 +274,7 @@ rules:
   - RULE-SET,apple,DIRECT
   - RULE-SET,google,DIRECT
   - RULE-SET,proxy,策略
-  - RULE-SET,emby,Emby
+  - RULE-SET,emby,❤️ Emby公益服
   - RULE-SET,direct,DIRECT
   - RULE-SET,telegramcidr,策略
   - GEOIP,LAN,DIRECT
