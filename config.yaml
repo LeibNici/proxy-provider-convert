@@ -111,14 +111,17 @@ proxy-groups:
  
   - name: Emby
     type: select
+    proxies:
+      - DIRECT
     use:
       - foo
       
   - name: Proxifier客户端
     type: select
+    proxies:
+      - DIRECT
     use:
       - foo
-
 
 proxy-providers:
   foo:
