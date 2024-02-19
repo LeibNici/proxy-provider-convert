@@ -108,6 +108,17 @@ proxy-groups:
     filter: "🇩🇪|德国|DEU|DE|柏林|慕尼黑|汉堡|科隆|Germany"
     interval: 300
     tolerance: 50
+ 
+  - name: Emby
+    type: select
+    use:
+      - foo
+      
+  - name: Proxifier客户端
+    type: select
+    use:
+      - foo
+
 
 proxy-providers:
   foo:
@@ -163,6 +174,12 @@ rule-providers:
     url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/private.txt"
     path: ./RuleSet/private.yaml
     interval: 86400
+  emby:
+    type: http
+    behavior: domain
+    url: "https://ghproxy.net/https://raw.githubusercontent.com/LeibNici/MyNodes/main/EmbyRule.txt"
+    path: ./RuleSet/emby.yaml
+    interval: 86400
   gfw:
     type: http
     behavior: domain
@@ -201,6 +218,7 @@ rule-providers:
     interval: 86400
 
 rules:
+  - PROCESS-NAME,Proxifier.exe,Proxifier客户端
   - PROCESS-NAME,v2ray,DIRECT
   - PROCESS-NAME,xray,DIRECT
   - PROCESS-NAME,naive,DIRECT
@@ -253,6 +271,7 @@ rules:
   - RULE-SET,apple,DIRECT
   - RULE-SET,google,DIRECT
   - RULE-SET,proxy,策略
+  - RULE-SET,emby,Emby
   - RULE-SET,direct,DIRECT
   - RULE-SET,telegramcidr,策略
   - GEOIP,LAN,DIRECT
