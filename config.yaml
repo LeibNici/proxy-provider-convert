@@ -116,7 +116,7 @@ proxy-groups:
     use:
       - foo
       
-  - name: Proxifier客户端
+  - name: 🌍 Proxifier客户端
     type: select
     proxies:
       - DIRECT
@@ -221,7 +221,7 @@ rule-providers:
     interval: 86400
 
 rules:
-  - PROCESS-NAME,Proxifier.exe,Proxifier客户端
+  - PROCESS-NAME,Proxifier.exe,🌍 Proxifier客户端
   - PROCESS-NAME,v2ray,DIRECT
   - PROCESS-NAME,xray,DIRECT
   - PROCESS-NAME,naive,DIRECT
