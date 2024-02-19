@@ -1,0 +1,151 @@
+proxies:
+  - name: 电信1
+    server: 1.tel.852098505.xyz
+    port: 443
+    client-fingerprint: random
+    type: vless
+    uuid: 0c06ee93-f271-4ed2-9787-e14633ad8d26
+    tls: true
+    tfo: false
+    skip-cert-verify: false
+    servername: sd.852098505.xyz
+    network: ws
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        Host: sd.852098505.xyz
+  - name: 电信2
+    server: 2.tel.852098505.xyz
+    port: 443
+    client-fingerprint: random
+    type: vless
+    uuid: 0c06ee93-f271-4ed2-9787-e14633ad8d26
+    tls: true
+    tfo: false
+    skip-cert-verify: false
+    servername: sd.852098505.xyz
+    network: ws
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        Host: sd.852098505.xyz
+  - name: 电信3
+    server: 3.tel.852098505.xyz
+    port: 443
+    client-fingerprint: random
+    type: vless
+    uuid: 0c06ee93-f271-4ed2-9787-e14633ad8d26
+    tls: true
+    tfo: false
+    skip-cert-verify: false
+    servername: sd.852098505.xyz
+    network: ws
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        Host: sd.852098505.xyz
+  - name: 电信4
+    server: 4.tel.852098505.xyz
+    port: 443
+    client-fingerprint: random
+    type: vless
+    uuid: 0c06ee93-f271-4ed2-9787-e14633ad8d26
+    tls: true
+    tfo: false
+    skip-cert-verify: false
+    servername: sd.852098505.xyz
+    network: ws
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        Host: sd.852098505.xyz
+  - name: 电信5
+    server: 5.tel.852098505.xyz
+    port: 443
+    client-fingerprint: random
+    type: vless
+    uuid: 0c06ee93-f271-4ed2-9787-e14633ad8d26
+    tls: true
+    tfo: false
+    skip-cert-verify: false
+    servername: sd.852098505.xyz
+    network: ws
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        Host: sd.852098505.xyz
+  - name: 联通1
+    server: 1.cu.852098505.xyz
+    port: 443
+    client-fingerprint: random
+    type: vless
+    uuid: 0c06ee93-f271-4ed2-9787-e14633ad8d26
+    tls: true
+    tfo: false
+    skip-cert-verify: false
+    servername: sd.852098505.xyz
+    network: ws
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        Host: sd.852098505.xyz
+  - name: 联通2
+    server: 2.cu.852098505.xyz
+    port: 443
+    client-fingerprint: random
+    type: vless
+    uuid: 0c06ee93-f271-4ed2-9787-e14633ad8d26
+    tls: true
+    tfo: false
+    skip-cert-verify: false
+    servername: sd.852098505.xyz
+    network: ws
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        Host: sd.852098505.xyz
+  - name: 联通3
+    server: 3.cu.852098505.xyz
+    port: 443
+    client-fingerprint: random
+    type: vless
+    uuid: 0c06ee93-f271-4ed2-9787-e14633ad8d26
+    tls: true
+    tfo: false
+    skip-cert-verify: false
+    servername: sd.852098505.xyz
+    network: ws
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        Host: sd.852098505.xyz
+  - name: 联通4
+    server: 4.cu.852098505.xyz
+    port: 443
+    client-fingerprint: random
+    type: vless
+    uuid: 0c06ee93-f271-4ed2-9787-e14633ad8d26
+    tls: true
+    tfo: false
+    skip-cert-verify: false
+    servername: sd.852098505.xyz
+    network: ws
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        Host: sd.852098505.xyz
+  - name: 联通5
+    server: 5.cu.852098505.xyz
+    port: 443
+    client-fingerprint: random
+    type: vless
+    uuid: 0c06ee93-f271-4ed2-9787-e14633ad8d26
+    tls: true
+    tfo: false
+    skip-cert-verify: false
+    servername: sd.852098505.xyz
+    network: ws
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        Host: sd.852098505.xyz
