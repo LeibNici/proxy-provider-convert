@@ -22,9 +22,6 @@ proxy-groups:
     proxies:
       - 🚀 手动切换
       - ♻️ 自动选择
-      - 🔯 故障转移
-      - 🔮 负载均衡
-      - 双线负载
       - 🇯🇵 日本节点
       - 🇸🇬 新加坡节点
       - 🇺🇲 美国节点
@@ -41,35 +38,6 @@ proxy-groups:
     url: 'http://www.gstatic.com/generate_204'
     use:
       - foo
-    interval: 300
-    tolerance: 50
-
-  - name: 🔯 故障转移
-    type: fallback
-    url: 'http://www.gstatic.com/generate_204'
-    use:
-      - foo
-    interval: 300
-    tolerance: 50
-
-  - name: 🔮 负载均衡
-    type: load-balance
-    strategy: consistent-hashing
-    url: 'http://www.gstatic.com/generate_204'
-    proxies:
-      - 🇯🇵 日本节点
-      - 🇸🇬 新加坡节点
-      - 🇺🇲 美国节点
-      - 🇩🇪 德国节点
-    interval: 300
-    tolerance: 50
-
-  - name: 双线负载
-    type: url-test
-    url: 'http://www.gstatic.com/generate_204'
-    use:
-      - foo
-    filter: "双线"
     interval: 300
     tolerance: 50
 
