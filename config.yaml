@@ -15,6 +15,17 @@ dns:
   fallback: [ 'https://doh.dns.sb/dns-query', 'https://dns.cloudflare.com/dns-query', 'https://dns.twnic.tw/dns-query', 'tls://8.8.4.4:853' ]
   fallback-filter: { geoip: true, ipcidr: [ 240.0.0.0/4, 0.0.0.0/32 ] }
 
+proxy-providers:
+  foo:
+    type: http
+    path: ./foo.yaml
+    url: "订阅链接"
+    interval: 1800
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 300
+
 proxy-groups:
 
   - name: 策略
@@ -83,24 +94,6 @@ proxy-groups:
       - DIRECT
     use:
       - foo
-      
-  - name: 🌍 Proxifier客户端
-    type: select
-    proxies:
-      - DIRECT
-    use:
-      - foo
-
-proxy-providers:
-  foo:
-    type: http
-    path: ./foo.yaml
-    url: "https://mirror.ghproxy.com/https://raw.githubusercontent.com/LeibNici/proxy-provider-convert/main/test.yaml"
-    interval: 1800
-    health-check:
-      enable: true
-      url: http://www.gstatic.com/generate_204
-      interval: 300
 
 rule-providers:
   reject:
@@ -189,7 +182,6 @@ rule-providers:
     interval: 86400
 
 rules:
-  - PROCESS-NAME,Proxifier.exe,🌍 Proxifier客户端
   - PROCESS-NAME,v2ray,DIRECT
   - PROCESS-NAME,xray,DIRECT
   - PROCESS-NAME,naive,DIRECT
