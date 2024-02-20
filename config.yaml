@@ -141,7 +141,7 @@ rule-providers:
   emby:
     type: http
     behavior: domain
-    url: "https://ghproxy.net/https://raw.githubusercontent.com/LeibNici/MyNodes/main/EmbyRule.txt"
+    url: "https://cdn.jsdelivr.net/gh/LeibNici/proxy-provider-convert@main/Rules/EmbyRule.txt"
     path: ./RuleSet/emby.yaml
     interval: 86400
   gfw:
