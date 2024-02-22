@@ -1,0 +1,9 @@
+# > 流媒体MisakaF服务器
+HOST,emby.aca.best
+HOST-SUFFIX,stream1.misakaf.org
+HOST-SUFFIX,stream2.misakaf.org
+HOST-SUFFIX,stream3.misakaf.org
+
+# > 流媒体垃圾服务器
+HOST-SUFFIX,xmsl.org
+HOST-SUFFIX,loseremby.org
