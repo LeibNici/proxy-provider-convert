@@ -33,6 +33,7 @@ proxy-groups:
     proxies:
       - 🚀 手动切换
       - ♻️ 自动选择
+      - 🇭🇰 香港节点
       - 🇯🇵 日本节点
       - 🇸🇬 新加坡节点
       - 🇺🇲 美国节点
@@ -54,8 +55,14 @@ proxy-groups:
     
   - name: 📲 电报信息
     type: select
-    use:
-      - foo
+    proxies:
+     - 策略
+     - 🚀 手动切换
+     - 🇭🇰 香港节点
+     - 🇯🇵 日本节点
+     - 🇸🇬 新加坡节点
+     - 🇺🇲 美国节点
+     - 🇩🇪 德国节点
 
   - name: 🇭🇰 香港节点
     type: url-test
