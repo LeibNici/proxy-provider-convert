@@ -1,9 +1,10 @@
-# > 流媒体MisakaF服务器
-DOMAIN,emby.aca.best
-DOMAIN-SUFFIX,stream1.misakaf.org
-DOMAIN-SUFFIX,stream2.misakaf.org
-DOMAIN-SUFFIX,stream3.misakaf.org
+payload:
+    # > 流媒体MisakaF服务器
+  - DOMAIN,emby.aca.best
+  - DOMAIN-SUFFIX,stream1.misakaf.org
+  - DOMAIN-SUFFIX,stream2.misakaf.org
+  - DOMAIN-SUFFIX,stream3.misakaf.org
 
-# > 流媒体垃圾服务器
-DOMAIN-SUFFIX,xmsl.org
-DOMAIN-SUFFIX,loseremby.org
+    # > 流媒体垃圾服务器
+  - DOMAIN-SUFFIX,xmsl.org
+  - DOMAIN-SUFFIX,loseremby.org
