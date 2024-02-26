@@ -1,11 +1,11 @@
 payload:
   # aca机场服
-  - 'emby.aca.best'
+  - DOMAIN,emby.aca.best
   # misakaf公益服
-  - 'stream1.misakaf.org'
-  - 'stream2.misakaf.org'
-  - 'stream3.misakaf.org'
-  - 'stream4.misakaf.org'
+  - DOMAIN,stream1.misakaf.org
+  - DOMAIN,stream2.misakaf.org
+  - DOMAIN,stream3.misakaf.org
+  - DOMAIN,stream4.misakaf.org
   # 垃圾公益服
-  - '+.xmsl.org'
-  - '+.loseremby.org'
+  - DOMAIN-SUFFIX.xmsl.org
+  - DOMAIN-SUFFIX.loseremby.org
