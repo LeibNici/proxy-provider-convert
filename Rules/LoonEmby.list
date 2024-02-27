@@ -1,5 +1,7 @@
+# > 常规emby服务器
+DOMAIN-KEYWORD,emby
+
 # > 流媒体MisakaF服务器
-DOMAIN,emby.aca.best
 DOMAIN-SUFFIX,stream1.misakaf.org
 DOMAIN-SUFFIX,stream2.misakaf.org
 DOMAIN-SUFFIX,stream3.misakaf.org
