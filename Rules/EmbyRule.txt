@@ -1,5 +1,5 @@
 payload:
-  # emby
+  # 常规emby服务器
   - DOMAIN-KEYWORD,emby
   # misakaf公益服
   - DOMAIN,stream1.misakaf.org
