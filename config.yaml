@@ -28,7 +28,7 @@ proxy-providers:
 
 proxy-groups:
 
-  - name: 策略
+  - name: 策略选择
     type: select
     proxies:
       - 🚀 手动切换
@@ -68,7 +68,7 @@ proxy-groups:
   - name: 📲 电报信息
     type: select
     proxies:
-     - 策略
+     - 策略选择
      - 🚀 手动切换
      - 🇭🇰 香港节点
      - 🇯🇵 日本节点
@@ -236,10 +236,10 @@ rules:
   - RULE-SET,private,DIRECT
   - RULE-SET,icloud,DIRECT
   - RULE-SET,apple,DIRECT
-  - RULE-SET,google,策略
+  - RULE-SET,google,策略选择
   - RULE-SET,telegramcidr,📲 电报信息
   - RULE-SET,emby,❤️ Emby公益服
-  - RULE-SET,proxy,策略
+  - RULE-SET,proxy,策略选择
   - GEOIP,LAN,DIRECT
   - GEOIP,CN,DIRECT
-  - MATCH,策略
+  - MATCH,策略选择
