@@ -223,7 +223,7 @@ rule-providers:
 
   emby:
     type: http
-    behavior: domain
+    behavior: classical
     url: "https://cdn.jsdelivr.net/gh/LeibNici/proxy-provider-convert@main/Rules/EmbyRule.txt"
     path: ./RuleSet/emby.yaml
     interval: 86400
