@@ -28,7 +28,7 @@ proxy-providers:
 
 proxy-groups:
 
-  - name: 策略选择
+  - name: 🔰 策略选择
     type: select
     proxies:
       - 🚀 手动切换
