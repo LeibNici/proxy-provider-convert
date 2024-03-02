@@ -17,7 +17,7 @@
 # 非强制跳转
 # ^https:\/\/www\.google\.com\.hk\/.+ https://www.google.com/ncr 302
 # 强制跳转
-^https:\/\/www\.google\.com\.hk\/ https://www.google.com 302
+^https:\/\/www\.google\.com\.hk\/.+ https://www.google.com 302
 
 [MITM]
 hostname = *.google.com.hk ,*.g.cn,*.google.cn ,*.google.co.jp
