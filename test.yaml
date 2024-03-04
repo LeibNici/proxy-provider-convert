@@ -1,5 +1,5 @@
 proxies:
-  - name: 剩余流量：879.47 GB
+  - name: 剩余流量：879.46 GB
     server: 108.181.23.235
     port: 443
     udp: true
@@ -324,7 +324,7 @@ proxies:
     skip-cert-verify: false
     flow: xtls-rprx-vision
     client-fingerprint: ios
-    servername: 356baf02862d31c35c8782acbb1a1d0a5d5cd1.kbjc.top
+    servername: 3c83deb45832ffe59ee9bef858848503c4c9ee733e974ebc75666c14804624.kbjc.top
   - name: 🇸🇬新加坡2 | 高速专线
     type: vless
     server: pqsg2.aiopen.sbs
@@ -335,7 +335,7 @@ proxies:
     skip-cert-verify: false
     flow: xtls-rprx-vision
     client-fingerprint: safari
-    servername: c58cb7145775e08d3c06ff478ca6d0e0aa56b6ffbfb720b80276c373450453dd3b351987c3fd1cd2.kbjc.top
+    servername: 11b05e314dde95b56258c9a29bd0a91197775d.kbjc.top
   - name: 🇸🇬新加坡3 | 高速专线
     type: vless
     server: pqsg3.aiopen.sbs
@@ -346,7 +346,7 @@ proxies:
     skip-cert-verify: false
     flow: xtls-rprx-vision
     client-fingerprint: safari
-    servername: e0c71be7e7b605ad0f1ea24c217292f2a75921ef4c52d3eaf8dd9f013e3916dec80e5502f4562c.kbjc.top
+    servername: 287b7def6fc29b1a5ce2c82d2df1357e15bbdb83061eb4fc6fbe.kbjc.top
   - name: 🇸🇬新加坡4 | 高速专线
     type: vless
     server: pqsg4.aiopen.sbs
@@ -357,7 +357,7 @@ proxies:
     skip-cert-verify: false
     flow: xtls-rprx-vision
     client-fingerprint: ios
-    servername: d772242ada7ba53f850121739690ef23834eeec758ebedb2a1366c4662b75f0e24.kbjc.top
+    servername: 57e3f043c14c5d7792bf53e3dd0127b12264870c291c398a35e780081e9b2b7b8f39a5369e885d.kbjc.top
   - name: 🇸🇬新加坡5 | 高速专线
     type: vless
     server: pqsg5.aiopen.sbs
@@ -368,7 +368,7 @@ proxies:
     skip-cert-verify: false
     flow: xtls-rprx-vision
     client-fingerprint: edge
-    servername: ed089d9b9900ff38343a36fa2719a1dd943baeca5b7098.kbjc.top
+    servername: 32184c549049ebb21b8d9baadfaa1f4a5dd872f1dfbc716fbd057fe840049932a052.kbjc.top
   - name: 🇸🇬新加坡6 | 高速专线
     type: vless
     server: pqsg6.aiopen.sbs
@@ -379,7 +379,7 @@ proxies:
     skip-cert-verify: false
     flow: xtls-rprx-vision
     client-fingerprint: safari
-    servername: e72b8ee3183059595b2f3919ce44f3e9d8cbda14aaa868dc2b2e026e6c9edd2b.kbjc.top
+    servername: 75d3dd95b12a8b58a7d4951420ac45b5fcd2d0732d103db9db3c175578c92e9dec8f550a27a5.kbjc.top
   - name: 🇹🇼台湾
     type: vless
     server: pqhinet1.aiopen.sbs
