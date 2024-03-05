@@ -1,5 +1,5 @@
 proxies:
-  - name: 剩余流量：999.97 GB
+  - name: 剩余流量：999.95 GB
     server: 108.181.23.235
     port: 443
     udp: true
@@ -261,7 +261,7 @@ proxies:
     skip-cert-verify: false
     flow: xtls-rprx-vision
     client-fingerprint: safari
-    servername: 91d3bddb34e8a217ba4e7a16bdaf5b94d144f9607ee87acb7614e596.kbjc.top
+    servername: 0f31730a6e5b411f01ce55de96d9f33b3ed1f5ea0f0ad1ac3056067de3.kbjc.top
   - name: 🇯🇵日本3 | 高速专线
     type: vless
     server: pqjp3.aiopen.sbs
@@ -272,7 +272,7 @@ proxies:
     skip-cert-verify: false
     flow: xtls-rprx-vision
     client-fingerprint: ios
-    servername: 5a7f99ed19db1c203060f8b268dbc2a9ff97.kbjc.top
+    servername: b839d1ab37fc6c0b9dd7e2513d007d2fe64972cbb151e72f9a822afaa3a4f35f.kbjc.top
   - name: 🇯🇵日本4 | 高速专线
     type: vless
     server: pqjp4.aiopen.sbs
@@ -283,7 +283,7 @@ proxies:
     skip-cert-verify: false
     flow: xtls-rprx-vision
     client-fingerprint: ios
-    servername: a92cab99ed9d3eae0ee5dd2e9a20cb774f422f0579b795cac7fe5b21861ef34294de134dff.kbjc.top
+    servername: 2e4a1a9b35f01b4adab99d09dfe0051f08da6d0e2c678058a65d39e4af9a790b.kbjc.top
   - name: 🇯🇵日本5 | 高速专线
     type: vless
     server: pqjp5.aiopen.sbs
@@ -294,7 +294,7 @@ proxies:
     skip-cert-verify: false
     flow: xtls-rprx-vision
     client-fingerprint: firefox
-    servername: 25524842874dd8000c1abc6405616984c21cac3cd05389754c026efd.kbjc.top
+    servername: 097791a03a7467435aeb41325ae31af2d5bd6212a56b572e.kbjc.top
   - name: 🇯🇵日本6 | 高速专线
     type: vless
     server: pqjp6.aiopen.sbs
@@ -305,7 +305,7 @@ proxies:
     skip-cert-verify: false
     flow: xtls-rprx-vision
     client-fingerprint: firefox
-    servername: e03e70dc7142bb4a87dbafec48d4376edbcd130a2c97355f54318d3123.kbjc.top
+    servername: b62555b435a8b2370efbadc3b6061695383a2fce05df0e51380f.kbjc.top
   - name: 🇸🇬新加坡1 | 高速专线
     type: vless
     server: pqsg1.aiopen.sbs
@@ -316,7 +316,7 @@ proxies:
     skip-cert-verify: false
     flow: xtls-rprx-vision
     client-fingerprint: ios
-    servername: dcf791b0994316ab8ae83fbb4576ad6c9ba58b38a219feef515f6c7bf83649fb2273f3.kbjc.top
+    servername: 0cb19491bb67f6d3cbd71c64228841db3a339c95.kbjc.top
   - name: 🇸🇬新加坡2 | 高速专线
     type: vless
     server: pqsg2.aiopen.sbs
@@ -327,7 +327,7 @@ proxies:
     skip-cert-verify: false
     flow: xtls-rprx-vision
     client-fingerprint: safari
-    servername: eaa9271b7948cef4301e2980069b323be308378faeb7ffa1ab17.kbjc.top
+    servername: a04a81024888ca2f49b141b700e327533b00ad33f13d15e138cb6b667e4c.kbjc.top
   - name: 🇸🇬新加坡3 | 高速专线
     type: vless
     server: pqsg3.aiopen.sbs
@@ -338,7 +338,7 @@ proxies:
     skip-cert-verify: false
     flow: xtls-rprx-vision
     client-fingerprint: safari
-    servername: 51e76d86f2674e53d61ee1954171cb27f014a459752e.kbjc.top
+    servername: af69e97c55f931d9b5e7271a8e5d98c531c853bd39b54e1c76364c03bc6c156415bb8e153deb.kbjc.top
   - name: 🇸🇬新加坡4 | 高速专线
     type: vless
     server: pqsg4.aiopen.sbs
@@ -349,7 +349,7 @@ proxies:
     skip-cert-verify: false
     flow: xtls-rprx-vision
     client-fingerprint: ios
-    servername: bacaf6c16f21a50a15e72cbc8c95c09c2a681e1525be6b0e00a8dcd794.kbjc.top
+    servername: eae32d79f8826a4ba8d4737bb9a29a926576f9edab48cf32cb35976c509062b69d88ca1122.kbjc.top
   - name: 🇸🇬新加坡5 | 高速专线
     type: vless
     server: pqsg5.aiopen.sbs
@@ -360,7 +360,7 @@ proxies:
     skip-cert-verify: false
     flow: xtls-rprx-vision
     client-fingerprint: edge
-    servername: 60ac684175ad57cb75da4346916912c54aaee775a39b28c40acddcc47211e72f60.kbjc.top
+    servername: fd834af7956cd3ca35d7ccfb5208443d7a06f649e20cfc4b1fe9ba.kbjc.top
   - name: 🇸🇬新加坡6 | 高速专线
     type: vless
     server: pqsg6.aiopen.sbs
@@ -371,7 +371,7 @@ proxies:
     skip-cert-verify: false
     flow: xtls-rprx-vision
     client-fingerprint: safari
-    servername: 4047a7ad293c7ff709bfe4be5840dc65ac43715e7b2e4772dcef5d8a17021f.kbjc.top
+    servername: 8b2de15d5d905636ff3991d8b1256bf43e8bb1837d87df04bb44e35c439850f79f98b3799af4838c.kbjc.top
   - name: 🇹🇼台湾
     type: vless
     server: pqhinet1.aiopen.sbs
