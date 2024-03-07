@@ -1,5 +1,5 @@
 proxies:
-  - name: 剩余流量：966.04 GB
+  - name: 剩余流量：966.02 GB
     server: 108.181.23.235
     port: 443
     udp: true
@@ -7,7 +7,7 @@ proxies:
     sni: tv.apple.com
     type: hysteria2
     password: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
-  - name: 距离下次重置剩余：29 天
+  - name: 距离下次重置剩余：28 天
     server: 108.181.23.235
     port: 443
     udp: true
@@ -165,6 +165,22 @@ proxies:
     udp: true
     skip-cert-verify: true
     sni: tv.apple.com
+    type: hysteria2
+    password: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
+  - name: 🇩🇪德国-hy2
+    server: 5.104.108.120
+    port: 443
+    udp: true
+    skip-cert-verify: true
+    sni: api.push.apple.com
+    type: hysteria2
+    password: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
+  - name: 🇩🇪德国2-hy2
+    server: 5.104.108.109
+    port: 443
+    udp: true
+    skip-cert-verify: true
+    sni: api.push.apple.com
     type: hysteria2
     password: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
   - name: 🇺🇸美国洛杉矶01
