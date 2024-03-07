@@ -1,5 +1,5 @@
 proxies:
-  - name: 剩余流量：976.34 GB
+  - name: 剩余流量：976.28 GB
     server: 108.181.23.235
     port: 443
     udp: true
@@ -291,7 +291,7 @@ proxies:
     skip-cert-verify: false
     flow: xtls-rprx-vision
     client-fingerprint: ios
-    servername: 0a4c9d12a1289f6a8f061506b068f6d5b78a74ca7fb2453be30079.kbjc.top
+    servername: 31d729531edab17b39a5950600f557928493edfef93d0cdb2f47238253af562205c0c1.kbjc.top
   - name: 🇯🇵日本5 | 高速专线
     type: vless
     server: pqjp5.aiopen.sbs
@@ -302,7 +302,7 @@ proxies:
     skip-cert-verify: false
     flow: xtls-rprx-vision
     client-fingerprint: firefox
-    servername: 21a1c68f054544214a962edd56da7588c993e666d85fb70ee6eaad8ef72b7fe4a6f432a75a.kbjc.top
+    servername: 2a469c49960470da94705b0ae6ead4ab0312533ae8c97f226c8f146e0e1444baad2666.kbjc.top
   - name: 🇯🇵日本6 | 高速专线
     type: vless
     server: pqjp6.aiopen.sbs
@@ -313,10 +313,10 @@ proxies:
     skip-cert-verify: false
     flow: xtls-rprx-vision
     client-fingerprint: firefox
-    servername: 8765298c4cc20586fa5ff863d8189f004314c99199bfbea2f687e6d645b381aa6d394e29b4d36983.kbjc.top
+    servername: af770b7cc7ad70dcac9e52fefb20ac668f1ee10fef651a71.kbjc.top
   - name: 🇸🇬新加坡1 | 高速专线
     type: vless
-    server: 13.229.81.40
+    server: pqsg1.aiopen.sbs
     port: 443
     uuid: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
     udp: true
@@ -327,7 +327,7 @@ proxies:
     servername: pqsg1.kbjc.top
   - name: 🇸🇬新加坡2 | 高速专线
     type: vless
-    server: 13.212.21.18
+    server: pqsg2.aiopen.sbs
     port: 443
     uuid: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
     udp: true
@@ -338,7 +338,7 @@ proxies:
     servername: pqsg2.kbjc.top
   - name: 🇸🇬新加坡3 | 高速专线
     type: vless
-    server: 18.143.158.110
+    server: pqsg3.aiopen.sbs
     port: 443
     uuid: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
     udp: true
@@ -357,7 +357,7 @@ proxies:
     skip-cert-verify: false
     flow: xtls-rprx-vision
     client-fingerprint: ios
-    servername: 38c0924c94137d5c436757af184981d00d44.kbjc.top
+    servername: d74442b6b6c8944fb67e248c389892d4f6eddb5ffc5ed81e40b117b754d0a8001bc5f962bb37.kbjc.top
   - name: 🇸🇬新加坡5 | 高速专线
     type: vless
     server: pqsg5.aiopen.sbs
@@ -368,7 +368,7 @@ proxies:
     skip-cert-verify: false
     flow: xtls-rprx-vision
     client-fingerprint: edge
-    servername: 1fae54ccd1a94e14653dbf69385fc25c429d36c938a131494d7a3b.kbjc.top
+    servername: 52fa9cb55275732d368689b30fa7a086553aa23f192c6493709793ab3a.kbjc.top
   - name: 🇸🇬新加坡6 | 高速专线
     type: vless
     server: pqsg6.aiopen.sbs
@@ -379,7 +379,7 @@ proxies:
     skip-cert-verify: false
     flow: xtls-rprx-vision
     client-fingerprint: safari
-    servername: 00484930f21f65ae6309a49396834e4a1e03cd73f7684fc2.kbjc.top
+    servername: db61efc7ae95e3998b3dc7bb5eaabc1fc588c8b11dce6cda25a5a1380dfd10e8256c.kbjc.top
   - name: 🇹🇼台湾
     type: vless
     server: 957e32be476a.78ab92.98f0fa.a458.t1.108f4143-d0af-4e42-85a0-b13448ab5917.138503301e7d.aiopen.sbs
@@ -415,7 +415,7 @@ proxies:
     servername: pqtw3.kbjc.top
   - name: 🇯🇵日本高速01-0.1倍
     type: trojan
-    server: www.visa.com.sg
+    server: download.yunzhongzhuan.com
     port: 443
     password: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
     udp: true
@@ -423,11 +423,11 @@ proxies:
     ws-opts:
       path: /pq/jp1
       headers:
-        Host: p2jp1.pqjc.buzz
-    sni: p2jp1.pqjc.buzz
+        Host: p3jp1.pqjc.buzz
+    sni: p3jp1.pqjc.buzz
   - name: 🇯🇵日本高速02-0.1倍
     type: trojan
-    server: www.visa.com.sg
+    server: download.yunzhongzhuan.com
     port: 443
     password: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
     udp: true
@@ -435,11 +435,11 @@ proxies:
     ws-opts:
       path: /pq/jp1
       headers:
-        Host: 3jp2.pqjc.buzz
-    sni: 3jp2.pqjc.buzz
+        Host: 4jp2.pqjc.buzz
+    sni: 4jp2.pqjc.buzz
   - name: 🇯🇵日本高速03-0.1倍
     type: trojan
-    server: www.visa.co.jp
+    server: download.yunzhongzhuan.com
     port: 443
     password: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
     udp: true
@@ -447,8 +447,8 @@ proxies:
     ws-opts:
       path: /pq/jp2
       headers:
-        Host: 3jp3.pqjc.buzz
-    sni: 3jp3.pqjc.buzz
+        Host: 4jp3.pqjc.buzz
+    sni: 4jp3.pqjc.buzz
   - name: 🇯🇵日本高速04-0.1倍
     type: trojan
     server: 209.46.30.17
@@ -487,7 +487,7 @@ proxies:
     sni: psg2.pqjc.buzz
   - name: 🇸🇬新加坡高速03-0.1倍
     type: trojan
-    server: www.visa.com.tw
+    server: 185.176.24.88
     port: 443
     password: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
     udp: true
@@ -495,11 +495,11 @@ proxies:
     ws-opts:
       path: /pq/sg2
       headers:
-        Host: psg3.pqjc.buzz
-    sni: psg3.pqjc.buzz
+        Host: p1sg3.pqjc.buzz
+    sni: p1sg3.pqjc.buzz
   - name: 🇸🇬新加坡高速04-0.1倍
     type: trojan
-    server: www.visa.com.tw
+    server: 185.176.24.53
     port: 443
     password: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
     udp: true
@@ -507,11 +507,11 @@ proxies:
     ws-opts:
       path: /pq/sg2
       headers:
-        Host: p1sg4.pqjc.buzz
-    sni: p1sg4.pqjc.buzz
+        Host: p2sg4.pqjc.buzz
+    sni: p2sg4.pqjc.buzz
   - name: 🇺🇸美国凤凰城1-0.01倍
     type: trojan
-    server: 104.18.9.215
+    server: 167.68.5.57
     port: 443
     password: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
     udp: true
@@ -519,11 +519,11 @@ proxies:
     ws-opts:
       path: /pq/us1
       headers:
-        Host: p3us1.pqjc.buzz
-    sni: p3us1.pqjc.buzz
+        Host: p4us1.pqjc.buzz
+    sni: p4us1.pqjc.buzz
   - name: 🇺🇸美国凤凰城2-0.01倍
     type: trojan
-    server: 199.181.197.6
+    server: 89.116.161.75
     port: 443
     password: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
     udp: true
@@ -531,11 +531,11 @@ proxies:
     ws-opts:
       path: /pq/us2
       headers:
-        Host: 3us2.pqjc.buzz
-    sni: 3us2.pqjc.buzz
+        Host: 4us2.pqjc.buzz
+    sni: 4us2.pqjc.buzz
   - name: 🇺🇸美国凤凰城3-0.01倍
     type: trojan
-    server: 45.159.217.223
+    server: 108.162.192.133
     port: 443
     password: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
     udp: true
@@ -543,11 +543,11 @@ proxies:
     ws-opts:
       path: /pq/us3
       headers:
-        Host: 61us3.pqjc.buzz
-    sni: 61us3.pqjc.buzz
+        Host: 62us3.pqjc.buzz
+    sni: 62us3.pqjc.buzz
   - name: 🇺🇸美国凤凰城4-0.01倍
     type: trojan
-    server: www.visa.com.hk
+    server: 108.162.192.149
     port: 443
     password: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
     udp: true
@@ -555,5 +555,5 @@ proxies:
     ws-opts:
       path: /pq/us4
       headers:
-        Host: p6us4.pqjc.buzz
-    sni: p6us4.pqjc.buzz
+        Host: p7us4.pqjc.buzz
+    sni: p7us4.pqjc.buzz
