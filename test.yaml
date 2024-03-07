@@ -1,5 +1,5 @@
 proxies:
-  - name: 剩余流量：966.02 GB
+  - name: 剩余流量：965.95 GB
     server: 108.181.23.235
     port: 443
     udp: true
@@ -304,6 +304,36 @@ proxies:
     flow: xtls-rprx-vision
     client-fingerprint: chrome
     servername: usp3.hnkkt.top
+  - name: 🇯🇵日本3 | 高速专线
+    type: vless
+    server: 13.112.197.86
+    port: 443
+    uuid: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
+    udp: true
+    tls: true
+    skip-cert-verify: false
+    flow: ""
+    client-fingerprint: ios
+    servername: pqjp3.kbjc.top
+    network: ws
+    ws-opts:
+      path: /videp
+      headers:
+        Host: pqjp3.kbjc.top
+  - name: 🇯🇵日本4 | 高速专线
+    type: vless
+    server: 43.207.85.53
+    port: 443
+    uuid: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
+    udp: true
+    tls: true
+    skip-cert-verify: false
+    flow: ""
+    client-fingerprint: ios
+    servername: jp4.kbjc.top
+    network: grpc
+    grpc-opts:
+      grpc-service-name: video
   - name: 🇯🇵日本5 | 高速专线
     type: vless
     server: 18.182.64.15
@@ -312,10 +342,9 @@ proxies:
     udp: true
     tls: true
     skip-cert-verify: false
-    flow: ""
+    flow: xtls-rprx-vision
     client-fingerprint: firefox
     servername: jp1.kbjc.top
-    network: h2
   - name: 🇯🇵日本6 | 高速专线
     type: vless
     server: 18.181.195.110
@@ -332,7 +361,7 @@ proxies:
       grpc-service-name: music
   - name: 🇸🇬新加坡5 | 高速专线
     type: vless
-    server: 13.214.214.181
+    server: 54.169.51.16
     port: 443
     uuid: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
     udp: true
@@ -341,10 +370,12 @@ proxies:
     flow: ""
     client-fingerprint: edge
     servername: sg1.kbjc.top
-    network: h2
+    network: grpc
+    grpc-opts:
+      grpc-service-name: music
   - name: 🇸🇬新加坡6 | 高速专线
     type: vless
-    server: 54.169.51.16
+    server: 13.214.214.181
     port: 443
     uuid: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
     udp: true
@@ -353,7 +384,6 @@ proxies:
     flow: ""
     client-fingerprint: safari
     servername: sg2.kbjc.top
-    network: h2
   - name: 🇹🇼台湾
     type: vless
     server: 957e32be476a.78ab92.98f0fa.a458.t1.108f4143-d0af-4e42-85a0-b13448ab5917.138503301e7d.aiopen.sbs
@@ -389,7 +419,7 @@ proxies:
     servername: pqtw3.kbjc.top
   - name: 🇯🇵日本高速01-0.1倍
     type: trojan
-    server: 89.116.161.75
+    server: 188.42.145.82
     port: 443
     password: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
     udp: true
@@ -401,7 +431,7 @@ proxies:
     sni: p3jp1.pqjc.buzz
   - name: 🇯🇵日本高速02-0.1倍
     type: trojan
-    server: 89.116.161.33
+    server: 188.42.145.34
     port: 443
     password: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
     udp: true
@@ -461,7 +491,7 @@ proxies:
     sni: psg2.pqjc.buzz
   - name: 🇸🇬新加坡高速03-0.1倍
     type: trojan
-    server: 185.176.24.88
+    server: 167.68.5.88
     port: 443
     password: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
     udp: true
@@ -473,7 +503,7 @@ proxies:
     sni: p2sg3.pqjc.buzz
   - name: 🇸🇬新加坡高速04-0.1倍
     type: trojan
-    server: 185.176.24.53
+    server: 79.99.28.8
     port: 443
     password: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
     udp: true
@@ -485,7 +515,7 @@ proxies:
     sni: p3sg4.pqjc.buzz
   - name: 🇺🇸美国凤凰城1-0.01倍
     type: trojan
-    server: 167.68.5.57
+    server: 77.37.33.63
     port: 443
     password: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
     udp: true
@@ -497,7 +527,7 @@ proxies:
     sni: p5us1.pqjc.buzz
   - name: 🇺🇸美国凤凰城2-0.01倍
     type: trojan
-    server: 89.116.161.75
+    server: 77.37.33.85
     port: 443
     password: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
     udp: true
@@ -509,7 +539,7 @@ proxies:
     sni: 5us2.pqjc.buzz
   - name: 🇺🇸美国凤凰城3-0.01倍
     type: trojan
-    server: 89.116.180.75
+    server: 77.74.228.33
     port: 443
     password: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
     udp: true
@@ -521,7 +551,7 @@ proxies:
     sni: 63us3.pqjc.buzz
   - name: 🇺🇸美国凤凰城4-0.01倍
     type: trojan
-    server: 89.116.180.86
+    server: 77.75.199.38
     port: 443
     password: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
     udp: true
