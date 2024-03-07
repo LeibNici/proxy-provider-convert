@@ -1,5 +1,5 @@
 proxies:
-  - name: 剩余流量：975.2 GB
+  - name: 剩余流量：975.08 GB
     server: 108.181.23.235
     port: 443
     udp: true
@@ -311,7 +311,9 @@ proxies:
     flow: ""
     client-fingerprint: firefox
     servername: jp2.kbjc.top
-    network: h2
+    network: grpc
+    grpc-opts:
+      grpc-service-name: music
   - name: 🇸🇬新加坡5 | 高速专线
     type: vless
     server: 13.214.214.181
