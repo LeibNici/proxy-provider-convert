@@ -1,5 +1,5 @@
 proxies:
-  - name: 剩余流量：964.65 GB
+  - name: 剩余流量：964.64 GB
     server: 108.181.23.235
     port: 443
     udp: true
@@ -81,6 +81,14 @@ proxies:
     password: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
   - name: 🇺🇸美国凤凰城03-0.1倍-hy2
     server: 163.123.192.151
+    port: 443
+    udp: true
+    skip-cert-verify: true
+    sni: music.apple.com
+    type: hysteria2
+    password: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
+  - name: 🇺🇸美国凤凰城04-0.1倍-hy2
+    server: 163.123.192.58
     port: 443
     udp: true
     skip-cert-verify: true
