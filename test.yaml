@@ -1,5 +1,5 @@
 proxies:
-  - name: 剩余流量：964.59 GB
+  - name: 剩余流量：964.57 GB
     server: 108.181.23.235
     port: 443
     udp: true
@@ -312,6 +312,39 @@ proxies:
     flow: xtls-rprx-vision
     client-fingerprint: chrome
     servername: usp3.hnkkt.top
+  - name: 🇭🇰香港HKT1 | 高速专线
+    type: vless
+    server: 178.173.236.226
+    port: 443
+    uuid: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
+    udp: true
+    tls: true
+    skip-cert-verify: false
+    flow: xtls-rprx-vision
+    client-fingerprint: firefox
+    servername: dchk1.hnkkt.top
+  - name: 🇭🇰香港HKT2 | 高速专线
+    type: vless
+    server: 178.173.236.226
+    port: 443
+    uuid: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
+    udp: true
+    tls: true
+    skip-cert-verify: false
+    flow: xtls-rprx-vision
+    client-fingerprint: safari
+    servername: dchk1.hnkkt.top
+  - name: 🇭🇰香港HKT3 | 高速专线
+    type: vless
+    server: 178.173.236.226
+    port: 443
+    uuid: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
+    udp: true
+    tls: true
+    skip-cert-verify: false
+    flow: xtls-rprx-vision
+    client-fingerprint: ios
+    servername: dchk1.hnkkt.top
   - name: 🇹🇼台湾
     type: vless
     server: 957e32be476a.78ab92.98f0fa.a458.t1.108f4143-d0af-4e42-85a0-b13448ab5917.138503301e7d.aiopen.sbs
@@ -346,146 +379,194 @@ proxies:
     client-fingerprint: chrome
     servername: pqtw3.kbjc.top
   - name: 🇯🇵日本高速01-0.1倍
-    type: trojan
+    type: vless
     server: 188.42.145.82
     port: 443
-    password: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
+    uuid: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
     udp: true
+    tls: true
+    skip-cert-verify: false
+    flow: ""
+    client-fingerprint: ios
+    servername: p3jp1.pqjc.buzz
     network: ws
     ws-opts:
       path: /pq/jp1
       headers:
         Host: p3jp1.pqjc.buzz
-    sni: p3jp1.pqjc.buzz
   - name: 🇯🇵日本高速02-0.1倍
-    type: trojan
+    type: vless
     server: 188.42.145.34
     port: 443
-    password: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
+    uuid: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
     udp: true
+    tls: true
+    skip-cert-verify: false
+    flow: ""
+    client-fingerprint: safari
+    servername: 4jp2.pqjc.buzz
     network: ws
     ws-opts:
       path: /pq/jp1
       headers:
         Host: 4jp2.pqjc.buzz
-    sni: 4jp2.pqjc.buzz
   - name: 🇯🇵日本高速03-0.1倍
-    type: trojan
+    type: vless
     server: 45.159.217.19
     port: 443
-    password: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
+    uuid: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
     udp: true
+    tls: true
+    skip-cert-verify: false
+    flow: ""
+    client-fingerprint: firefox
+    servername: 4jp3.pqjc.buzz
     network: ws
     ws-opts:
       path: /pq/jp2
       headers:
         Host: 4jp3.pqjc.buzz
-    sni: 4jp3.pqjc.buzz
   - name: 🇯🇵日本高速04-0.1倍
-    type: trojan
+    type: vless
     server: 209.46.30.17
     port: 443
-    password: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
+    uuid: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
     udp: true
+    tls: true
+    skip-cert-verify: false
+    flow: ""
+    client-fingerprint: safari
+    servername: 2jp4.pqjc.buzz
     network: ws
     ws-opts:
       path: /pq/jp2
       headers:
         Host: 2jp4.pqjc.buzz
-    sni: 2jp4.pqjc.buzz
   - name: 🇸🇬新加坡高速01-0.1倍
-    type: trojan
+    type: vless
     server: 185.146.173.24
     port: 443
-    password: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
+    uuid: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
     udp: true
+    tls: true
+    skip-cert-verify: false
+    flow: ""
+    client-fingerprint: ios
+    servername: psg1.pqjc.buzz
     network: ws
     ws-opts:
       path: /pq/sg1
       headers:
         Host: psg1.pqjc.buzz
-    sni: psg1.pqjc.buzz
   - name: 🇸🇬新加坡高速02-0.1倍
-    type: trojan
+    type: vless
     server: 185.146.173.186
     port: 443
-    password: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
+    uuid: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
     udp: true
+    tls: true
+    skip-cert-verify: false
+    flow: ""
+    client-fingerprint: firefox
+    servername: psg2.pqjc.buzz
     network: ws
     ws-opts:
       path: /pq/sg1
       headers:
         Host: psg2.pqjc.buzz
-    sni: psg2.pqjc.buzz
   - name: 🇸🇬新加坡高速03-0.1倍
-    type: trojan
+    type: vless
     server: 167.68.5.88
     port: 443
-    password: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
+    uuid: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
     udp: true
+    tls: true
+    skip-cert-verify: false
+    flow: ""
+    client-fingerprint: ios
+    servername: p2sg3.pqjc.buzz
     network: ws
     ws-opts:
       path: /pq/sg2
       headers:
         Host: p2sg3.pqjc.buzz
-    sni: p2sg3.pqjc.buzz
   - name: 🇸🇬新加坡高速04-0.1倍
-    type: trojan
-    server: 79.99.28.8
+    type: vless
+    server: 79.99.28.47
     port: 443
-    password: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
+    uuid: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
     udp: true
+    tls: true
+    skip-cert-verify: false
+    flow: ""
+    client-fingerprint: firefox
+    servername: p3sg4.pqjc.buzz
     network: ws
     ws-opts:
-      path: /pq/sg2
+      path: /pq/sg1
       headers:
-        Host: p3sg4.pqjc.buzz
-    sni: p3sg4.pqjc.buzz
+        Host: psg1.pqjc.buzz
   - name: 🇺🇸美国凤凰城1-0.01倍
-    type: trojan
+    type: vless
     server: 77.37.33.63
     port: 443
-    password: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
+    uuid: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
     udp: true
+    tls: true
+    skip-cert-verify: false
+    flow: ""
+    client-fingerprint: ios
+    servername: p5us1.pqjc.buzz
     network: ws
     ws-opts:
       path: /pq/us1
       headers:
         Host: p5us1.pqjc.buzz
-    sni: p5us1.pqjc.buzz
   - name: 🇺🇸美国凤凰城2-0.01倍
-    type: trojan
+    type: vless
     server: 77.37.33.85
     port: 443
-    password: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
+    uuid: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
     udp: true
+    tls: true
+    skip-cert-verify: false
+    flow: ""
+    client-fingerprint: safari
+    servername: 5us2.pqjc.buzz
     network: ws
     ws-opts:
       path: /pq/us2
       headers:
         Host: 5us2.pqjc.buzz
-    sni: 5us2.pqjc.buzz
   - name: 🇺🇸美国凤凰城3-0.01倍
-    type: trojan
-    server: 77.74.228.88
+    type: vless
+    server: 77.74.228.73
     port: 443
-    password: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
+    uuid: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
     udp: true
+    tls: true
+    skip-cert-verify: false
+    flow: ""
+    client-fingerprint: ios
+    servername: 63us3.pqjc.buzz
     network: ws
     ws-opts:
       path: /pq/us3
       headers:
         Host: 63us3.pqjc.buzz
-    sni: 63us3.pqjc.buzz
   - name: 🇺🇸美国凤凰城4-0.01倍
-    type: trojan
+    type: vless
     server: 77.75.199.38
     port: 443
-    password: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
+    uuid: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
     udp: true
+    tls: true
+    skip-cert-verify: false
+    flow: ""
+    client-fingerprint: firefox
+    servername: p8us4.pqjc.buzz
     network: ws
     ws-opts:
       path: /pq/us4
       headers:
         Host: p8us4.pqjc.buzz
-    sni: p8us4.pqjc.buzz
