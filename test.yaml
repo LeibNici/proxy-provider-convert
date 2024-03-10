@@ -1,5 +1,5 @@
 proxies:
-  - name: 剩余流量：957.54 GB
+  - name: 剩余流量：957.53 GB
     server: 108.181.23.235
     port: 443
     udp: true
@@ -540,7 +540,7 @@ proxies:
         Host: 5us2.pqjc.buzz
   - name: 🇺🇸美国凤凰城3-0.01倍
     type: vless
-    server: 77.74.228.73
+    server: 77.75.199.43
     port: 443
     uuid: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
     udp: true
