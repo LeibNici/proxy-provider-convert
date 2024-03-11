@@ -1,5 +1,5 @@
 proxies:
-  - name: 剩余流量：947.47 GB
+  - name: 剩余流量：947.14 GB
     server: 108.181.23.235
     port: 443
     udp: true
@@ -7,7 +7,7 @@ proxies:
     sni: tv.apple.com
     type: hysteria2
     password: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
-  - name: 距离下次重置剩余：25 天
+  - name: 距离下次重置剩余：24 天
     server: 108.181.23.235
     port: 443
     udp: true
