@@ -1,5 +1,5 @@
 proxies:
-  - name: 剩余流量：957.47 GB
+  - name: 剩余流量：957.46 GB
     server: 108.181.23.235
     port: 443
     udp: true
@@ -81,14 +81,6 @@ proxies:
     password: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
   - name: 🇺🇸美国凤凰城03-0.1倍-hy2
     server: 163.123.192.151
-    port: 443
-    udp: true
-    skip-cert-verify: true
-    sni: music.apple.com
-    type: hysteria2
-    password: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
-  - name: 🇺🇸美国凤凰城04-0.1倍-hy2
-    server: 163.123.192.58
     port: 443
     udp: true
     skip-cert-verify: true
@@ -312,39 +304,6 @@ proxies:
     flow: xtls-rprx-vision
     client-fingerprint: chrome
     servername: usp3.hnkkt.top
-  - name: 🇭🇰香港HKT1 | 高速专线
-    type: vless
-    server: 178.173.236.226
-    port: 443
-    uuid: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
-    udp: true
-    tls: true
-    skip-cert-verify: false
-    flow: xtls-rprx-vision
-    client-fingerprint: firefox
-    servername: dchk1.hnkkt.top
-  - name: 🇭🇰香港HKT2 | 高速专线
-    type: vless
-    server: 178.173.236.226
-    port: 443
-    uuid: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
-    udp: true
-    tls: true
-    skip-cert-verify: false
-    flow: xtls-rprx-vision
-    client-fingerprint: safari
-    servername: dchk1.hnkkt.top
-  - name: 🇭🇰香港HKT3 | 高速专线
-    type: vless
-    server: 178.173.236.226
-    port: 443
-    uuid: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
-    udp: true
-    tls: true
-    skip-cert-verify: false
-    flow: xtls-rprx-vision
-    client-fingerprint: ios
-    servername: dchk1.hnkkt.top
   - name: 🇹🇼台湾
     type: vless
     server: 957e32be476a.78ab92.98f0fa.a458.t1.108f4143-d0af-4e42-85a0-b13448ab5917.138503301e7d.aiopen.sbs
