@@ -1,5 +1,5 @@
 proxies:
-  - name: 剩余流量：946.89 GB
+  - name: 剩余流量：946.86 GB
     server: 108.181.23.235
     port: 443
     udp: true
@@ -339,7 +339,7 @@ proxies:
     servername: pqtw3.kbjc.top
   - name: 🇯🇵日本高速01-0.1倍
     type: vless
-    server: 91.195.110.166
+    server: 91.195.110.168
     port: 443
     uuid: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
     udp: true
@@ -355,7 +355,7 @@ proxies:
         Host: p3jp1.pqjc.buzz
   - name: 🇯🇵日本高速02-0.1倍
     type: vless
-    server: 91.195.110.166
+    server: 91.195.110.168
     port: 443
     uuid: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
     udp: true
