@@ -1,5 +1,5 @@
 proxies:
-  - name: 剩余流量：932.19 GB
+  - name: 剩余流量：932.18 GB
     server: 108.181.23.235
     port: 443
     udp: true
@@ -345,9 +345,42 @@ proxies:
     flow: xtls-rprx-vision
     client-fingerprint: ios
     servername: dchk1.hnkkt.top
+  - name: 🇭🇰香港HKT4 | 高速专线
+    type: vless
+    server: 957e32be476a.78ab92.98f0fa.a458.h1.108f4143-d0af-4e42-85a0-b13448ab5917.138503301e7d.yydjc.top
+    port: 443
+    uuid: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
+    udp: true
+    tls: true
+    skip-cert-verify: false
+    flow: xtls-rprx-vision
+    client-fingerprint: ios
+    servername: dchk1.kbjc.top
+  - name: 🇭🇰香港HKT5 | 高速专线
+    type: vless
+    server: 957e32be476a.78ab92.98f0fa.a458.h2.108f4143-d0af-4e42-85a0-b13448ab5917.138503301e7d.yydjc.top
+    port: 443
+    uuid: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
+    udp: true
+    tls: true
+    skip-cert-verify: false
+    flow: xtls-rprx-vision
+    client-fingerprint: ios
+    servername: dchk2.kbjc.top
+  - name: 🇭🇰香港HKT6 | 高速专线
+    type: vless
+    server: 957e32be476a.78ab92.98f0fa.a458.h3.108f4143-d0af-4e42-85a0-b13448ab5917.138503301e7d.yydjc.top
+    port: 443
+    uuid: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
+    udp: true
+    tls: true
+    skip-cert-verify: false
+    flow: xtls-rprx-vision
+    client-fingerprint: ios
+    servername: dchk3.kbjc.top
   - name: 🇹🇼台湾
     type: vless
-    server: 957e32be476a.78ab92.98f0fa.a458.t1.108f4143-d0af-4e42-85a0-b13448ab5917.138503301e7d.aiopen.sbs
+    server: 957e32be476a.78ab92.98f0fa.a458.t1.108f4143-d0af-4e42-85a0-b13448ab5917.138503301e7d.yydjc.top
     port: 443
     uuid: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
     udp: true
@@ -358,7 +391,7 @@ proxies:
     servername: pqtw1.kbjc.top
   - name: 🇹🇼台湾2
     type: vless
-    server: 957e32be476a.78ab92.98f0fa.a458.t2.108f4143-d0af-4e42-85a0-b13448ab5917.138503301e7d.aiopen.sbs
+    server: 957e32be476a.78ab92.98f0fa.a458.t2.108f4143-d0af-4e42-85a0-b13448ab5917.138503301e7d.yydjc.top
     port: 443
     uuid: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
     udp: true
@@ -369,7 +402,7 @@ proxies:
     servername: pqtw2.kbjc.top
   - name: 🇹🇼台湾3
     type: vless
-    server: 957e32be476a.78ab92.98f0fa.a458.t3.108f4143-d0af-4e42-85a0-b13448ab5917.138503301e7d.aiopen.sbs
+    server: 957e32be476a.78ab92.98f0fa.a458.t3.108f4143-d0af-4e42-85a0-b13448ab5917.138503301e7d.yydjc.top
     port: 443
     uuid: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
     udp: true
