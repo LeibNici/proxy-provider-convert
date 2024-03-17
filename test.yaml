@@ -1,5 +1,5 @@
 proxies:
-  - name: 剩余流量：932.2 GB
+  - name: 剩余流量：932.19 GB
     server: 108.181.23.235
     port: 443
     udp: true
@@ -96,7 +96,7 @@ proxies:
     type: hysteria2
     password: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
   - name: 🇯🇵日本亚马逊-hy2
-    server: pqjp1.aiopen.sbs
+    server: pqjp1.yydjc.top
     port: 443
     udp: true
     skip-cert-verify: true
@@ -104,7 +104,7 @@ proxies:
     type: hysteria2
     password: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
   - name: 🇯🇵日本亚马逊2-hy2
-    server: pqjp2.aiopen.sbs
+    server: pqjp2.yydjc.top
     port: 443
     udp: true
     skip-cert-verify: true
@@ -112,7 +112,7 @@ proxies:
     type: hysteria2
     password: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
   - name: 🇯🇵日本亚马逊3-hy2
-    server: pqjp3.aiopen.sbs
+    server: pqjp3.yydjc.top
     port: 443
     udp: true
     skip-cert-verify: true
@@ -120,7 +120,7 @@ proxies:
     type: hysteria2
     password: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
   - name: 🇯🇵日本亚马逊4-hy2
-    server: pqjp4.aiopen.sbs
+    server: pqjp4.yydjc.top
     port: 443
     udp: true
     skip-cert-verify: true
@@ -128,7 +128,7 @@ proxies:
     type: hysteria2
     password: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
   - name: 🇸🇬新加坡亚马逊-hy2
-    server: pqsg1.aiopen.sbs
+    server: pqsg1.yydjc.top
     port: 443
     udp: true
     skip-cert-verify: true
@@ -136,7 +136,7 @@ proxies:
     type: hysteria2
     password: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
   - name: 🇸🇬新加坡亚马逊2-hy2
-    server: pqsg2.aiopen.sbs
+    server: pqsg2.yydjc.top
     port: 443
     udp: true
     skip-cert-verify: true
@@ -144,7 +144,7 @@ proxies:
     type: hysteria2
     password: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
   - name: 🇸🇬新加坡亚马逊3-hy2
-    server: pqsg3.aiopen.sbs
+    server: pqsg3.yydjc.top
     port: 443
     udp: true
     skip-cert-verify: true
@@ -152,7 +152,7 @@ proxies:
     type: hysteria2
     password: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
   - name: 🇸🇬新加坡亚马逊4-hy2
-    server: pqsg4.aiopen.sbs
+    server: pqsg4.yydjc.top
     port: 443
     udp: true
     skip-cert-verify: true
