@@ -159,22 +159,6 @@ proxies:
     sni: www.apple.com
     type: hysteria2
     password: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
-  - name: 🇭🇰香港 | 高速专线-hy2
-    server: 178.173.236.227
-    port: 443
-    udp: true
-    skip-cert-verify: true
-    sni: tv.apple.com
-    type: hysteria2
-    password: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
-  - name: 🇭🇰香港2 | 高速专线-hy2
-    server: 178.173.236.227
-    port: 443
-    udp: true
-    skip-cert-verify: true
-    sni: tv.apple.com
-    type: hysteria2
-    password: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
   - name: 🇩🇪德国-hy2
     server: 5.104.108.120
     port: 443
