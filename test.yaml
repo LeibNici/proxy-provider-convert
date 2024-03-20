@@ -397,7 +397,7 @@ proxies:
     servername: pqtw3.kbjc.top
   - name: 🇭🇰香港高速01-0.1倍
     type: vless
-    server: 162.159.58.83
+    server: 162.159.58.38
     port: 443
     uuid: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
     udp: true
