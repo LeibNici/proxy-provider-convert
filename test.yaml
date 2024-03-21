@@ -355,7 +355,7 @@ proxies:
     skip-cert-verify: false
     flow: xtls-rprx-vision
     client-fingerprint: ios
-    servername: dchk1.kbjc.top
+    servername: dchk1.yydjc.top
   - name: 🇭🇰香港HKT5 | 高速专线
     type: vless
     server: 957e32be476a.78ab92.98f0fa.a458.h2.108f4143-d0af-4e42-85a0-b13448ab5917.138503301e7d.yydjc.top
@@ -366,7 +366,7 @@ proxies:
     skip-cert-verify: false
     flow: xtls-rprx-vision
     client-fingerprint: ios
-    servername: dchk2.kbjc.top
+    servername: dchk2.yydjc.top
   - name: 🇭🇰香港HKT6 | 高速专线
     type: vless
     server: 957e32be476a.78ab92.98f0fa.a458.h3.108f4143-d0af-4e42-85a0-b13448ab5917.138503301e7d.yydjc.top
@@ -377,7 +377,7 @@ proxies:
     skip-cert-verify: false
     flow: xtls-rprx-vision
     client-fingerprint: ios
-    servername: dchk3.kbjc.top
+    servername: dchk3.yydjc.top
   - name: 🇹🇼台湾
     type: vless
     server: 957e32be476a.78ab92.98f0fa.a458.t1.108f4143-d0af-4e42-85a0-b13448ab5917.138503301e7d.yydjc.top
@@ -388,7 +388,7 @@ proxies:
     skip-cert-verify: false
     flow: xtls-rprx-vision
     client-fingerprint: chrome
-    servername: pqtw1.kbjc.top
+    servername: pqtw1.yydjc.top
   - name: 🇹🇼台湾2
     type: vless
     server: 957e32be476a.78ab92.98f0fa.a458.t2.108f4143-d0af-4e42-85a0-b13448ab5917.138503301e7d.yydjc.top
@@ -399,7 +399,7 @@ proxies:
     skip-cert-verify: false
     flow: xtls-rprx-vision
     client-fingerprint: chrome
-    servername: pqtw2.kbjc.top
+    servername: pqtw2.yydjc.top
   - name: 🇹🇼台湾3
     type: vless
     server: 957e32be476a.78ab92.98f0fa.a458.t3.108f4143-d0af-4e42-85a0-b13448ab5917.138503301e7d.yydjc.top
@@ -410,7 +410,7 @@ proxies:
     skip-cert-verify: false
     flow: xtls-rprx-vision
     client-fingerprint: chrome
-    servername: pqtw3.kbjc.top
+    servername: pqtw3.yydjc.top
   - name: 🇭🇰香港高速01-0.1倍
     type: vless
     server: 162.159.58.38
