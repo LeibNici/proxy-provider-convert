@@ -201,18 +201,7 @@ proxies:
     skip-cert-verify: false
     flow: xtls-rprx-vision
     client-fingerprint: chrome
-    servername: usla1.hnkkt.top
-  - name: 🇺🇸美国洛杉矶02
-    type: vless
-    server: 108.181.23.71
-    port: 443
-    uuid: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
-    udp: true
-    tls: true
-    skip-cert-verify: false
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    servername: usla2.hnkkt.top
+    servername: b6538631-3a51-4cb4-a0a6-f45b801ce457.hnkkt.com
   - name: 🇺🇸美国洛杉矶03
     type: vless
     server: 108.181.23.123
@@ -223,7 +212,7 @@ proxies:
     skip-cert-verify: false
     flow: xtls-rprx-vision
     client-fingerprint: chrome
-    servername: usla3.hnkkt.top
+    servername: eff18483-5c48-4abc-8912-764e2bb8c7bb.hnkkt.com
   - name: 🇺🇸美国洛杉矶04
     type: vless
     server: 108.181.23.231
@@ -234,7 +223,7 @@ proxies:
     skip-cert-verify: false
     flow: xtls-rprx-vision
     client-fingerprint: chrome
-    servername: usla4.hnkkt.top
+    servername: 5d4b431b-1a49-4124-9283-c7178a2638f2.hnkkt.com
   - name: 🇺🇸美国洛杉矶05
     type: vless
     server: 108.181.23.241
@@ -245,7 +234,7 @@ proxies:
     skip-cert-verify: false
     flow: xtls-rprx-vision
     client-fingerprint: chrome
-    servername: usla5.hnkkt.top
+    servername: 669520b5-4eb3-40d8-ae01-1ae611c2100d.hnkkt.com
   - name: 🇺🇸美国洛杉矶06
     type: vless
     server: 108.181.23.255
@@ -256,7 +245,7 @@ proxies:
     skip-cert-verify: false
     flow: xtls-rprx-vision
     client-fingerprint: chrome
-    servername: usla6.hnkkt.top
+    servername: 5d4b431b-1a49-4124-9283-c7178a2638f2.hnkkt.com
   - name: 🇺🇸美国洛杉矶07
     type: vless
     server: 108.181.23.253
@@ -267,7 +256,7 @@ proxies:
     skip-cert-verify: false
     flow: xtls-rprx-vision
     client-fingerprint: chrome
-    servername: usla7.hnkkt.top
+    servername: f703a087-8a8d-436b-b8f6-0410212dae0b.hnkkt.com
   - name: 🇺🇸美国洛杉矶08
     type: vless
     server: 108.181.22.195
@@ -278,7 +267,7 @@ proxies:
     skip-cert-verify: false
     flow: xtls-rprx-vision
     client-fingerprint: chrome
-    servername: usla8.hnkkt.top
+    servername: 0013f257-7683-43a5-b54e-80d362dc09ec.hnkkt.com
   - name: 🇺🇸美国凤凰城01-0.1倍
     type: vless
     server: 141.193.68.91
@@ -289,7 +278,7 @@ proxies:
     skip-cert-verify: false
     flow: xtls-rprx-vision
     client-fingerprint: chrome
-    servername: usp1.hnkkt.top
+    servername: c21ac103-a903-496c-b26b-ea8d2226234c.hnkkt.com
   - name: 🇺🇸美国凤凰城02-0.1倍
     type: vless
     server: 163.123.192.150
@@ -300,7 +289,7 @@ proxies:
     skip-cert-verify: false
     flow: xtls-rprx-vision
     client-fingerprint: chrome
-    servername: usp2.hnkkt.top
+    servername: 7ba354be-744d-414e-b9ec-3c2dfee495bd.hnkkt.com
   - name: 🇺🇸美国凤凰城03-0.1倍
     type: vless
     server: 148.59.74.63
@@ -311,7 +300,18 @@ proxies:
     skip-cert-verify: false
     flow: xtls-rprx-vision
     client-fingerprint: chrome
-    servername: usp3.hnkkt.top
+    servername: bc0108d7-f72f-4d71-a85f-5e981b9d5ad1.hnkkt.com
+  - name: 🇺🇸美国凤凰城04-0.1倍
+    type: vless
+    server: 163.123.192.235
+    port: 443
+    uuid: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
+    udp: true
+    tls: true
+    skip-cert-verify: false
+    flow: xtls-rprx-vision
+    client-fingerprint: safari
+    servername: 5192236d-c5a1-4b07-9017-b9fcabaadd7b.hnkkt.com
   - name: 🇭🇰香港HKT1 | 高速专线
     type: vless
     server: 178.173.236.226
@@ -322,7 +322,7 @@ proxies:
     skip-cert-verify: false
     flow: xtls-rprx-vision
     client-fingerprint: firefox
-    servername: dchk1.hnkkt.top
+    servername: 9f6a39dd-8a37-47c1-a145-fe9d49f06de2.hnkkt.com
   - name: 🇭🇰香港HKT2 | 高速专线
     type: vless
     server: 178.173.236.226
@@ -333,7 +333,7 @@ proxies:
     skip-cert-verify: false
     flow: xtls-rprx-vision
     client-fingerprint: safari
-    servername: dchk1.hnkkt.top
+    servername: 9f6a39dd-8a37-47c1-a145-fe9d49f06de2.hnkkt.com
   - name: 🇭🇰香港HKT3 | 高速专线
     type: vless
     server: 178.173.236.226
@@ -344,7 +344,7 @@ proxies:
     skip-cert-verify: false
     flow: xtls-rprx-vision
     client-fingerprint: ios
-    servername: dchk1.hnkkt.top
+    servername: 9f6a39dd-8a37-47c1-a145-fe9d49f06de2.hnkkt.com
   - name: 🇭🇰香港HKT4 | 高速专线
     type: vless
     server: 957e32be476a.78ab92.98f0fa.a458.h1.108f4143-d0af-4e42-85a0-b13448ab5917.138503301e7d.yydjc.top
