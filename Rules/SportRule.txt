@@ -1,0 +1,5 @@
+payload:
+  # strava
+  - DOMAIN-KEYWORD,strava
+  # icu
+  - DOMAIN-KEYWORD,icu
