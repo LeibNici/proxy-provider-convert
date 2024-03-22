@@ -3,3 +3,9 @@ payload:
   - DOMAIN-KEYWORD,strava
   # icu
   - DOMAIN-KEYWORD,icu
+  # riduck
+  - DOMAIN-KEYWORD,riduck
+  # komoot
+  - DOMAIN-KEYWORD,komoot
+  # statshunters
+  - DOMAIN-KEYWORD,statshunters
