@@ -23,8 +23,8 @@ proxy-providers:
     interval: 1800
     health-check:
       enable: true
-      url: 'http://cp.cloudflare.com/generate_204'
-      interval: 300
+      url: 'https://cp.cloudflare.com/generate_204'
+      interval: 60
 
 proxy-groups:
 
@@ -47,11 +47,11 @@ proxy-groups:
 
   - name: ♻️ 自动选择
     type: url-test
-    url: 'http://cp.cloudflare.com/generate_204'
+    url: 'https://cp.cloudflare.com/generate_204'
     use:
       - foo
-    interval: 300
-    tolerance: 50
+    interval: 60
+    tolerance: 0
 
   - name: ❤️ Emby公益服
     type: select
@@ -66,6 +66,17 @@ proxy-groups:
     use:
       - foo
 
+  - name: 🚴🏼‍♂️ 运动平台
+    type: select
+    proxies:
+      - 🔰 策略选择
+      - 🚀 手动切换
+      - 🇭🇰 香港节点
+      - 🇯🇵 日本节点
+      - 🇸🇬 新加坡节点
+      - 🇺🇲 美国节点
+      - 🇩🇪 德国节点
+
   - name: 📲 电报信息
     type: select
     proxies:
@@ -79,48 +90,48 @@ proxy-groups:
 
   - name: 🇭🇰 香港节点
     type: url-test
-    url: 'http://cp.cloudflare.com/generate_204'
+    url: 'https://cp.cloudflare.com/generate_204'
     use:
       - foo
     filter: "(?=.*(🇭🇰|港|虚通|(?i)HK|Hong))(?!.*(回国|校园|游戏|教育|(?i)GAME|IPV6)).*$"
-    interval: 300
-    tolerance: 50
+    interval: 60
+    tolerance: 0
 
   - name: 🇯🇵 日本节点
     type: url-test
-    url: 'http://cp.cloudflare.com/generate_204'
+    url: 'https://cp.cloudflare.com/generate_204'
     use:
       - foo
     filter: "(?=.*((?i) 🇯🇵|日|川日|东京|大阪|泉日|埼玉|JP|Japan))(?!.*((?i)回国|校园|游戏|教育|久虚|GAME|IPV6)).*$"
-    interval: 300
-    tolerance: 50
+    interval: 60
+    tolerance: 0
 
   - name: 🇸🇬 新加坡节点
     type: url-test
-    url: 'http://cp.cloudflare.com/generate_204'
+    url: 'https://cp.cloudflare.com/generate_204'
     use:
       - foo
     filter: "(?=.*(🇸🇬|新加坡|狮|(?i)SG|Singapore))(?!.*(回国|校园|游戏|教育|久虚|(?i)GAME|IPV6)).*$"
-    interval: 300
-    tolerance: 50
+    interval: 60
+    tolerance: 0
 
   - name: 🇺🇲 美国节点
     type: url-test
-    url: 'http://cp.cloudflare.com/generate_204'
+    url: 'https://cp.cloudflare.com/generate_204'
     use:
       - foo
     filter: "(?=.*(🇺🇸|美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|(?i)US|United States))(?!.*(回国|校园|游戏|教育|久虚|(?i)GAME|IPV6)).*$"
-    interval: 300
-    tolerance: 50
+    interval: 60
+    tolerance: 0
 
   - name: 🇩🇪 德国节点
     type: url-test
-    url: 'http://cp.cloudflare.com/generate_204'
+    url: 'https://cp.cloudflare.com/generate_204'
     use:
       - foo
     filter: "(?=.*(🇩🇪|德|(?i)DE|Germany))(?!.*(回国|校园|游戏|教育|久虚|(?i)GAME|IPV6)).*$"
-    interval: 300
-    tolerance: 50
+    interval: 60
+    tolerance: 0
 
 rule-providers:
   reject:
@@ -228,10 +239,19 @@ rule-providers:
     path: ./RuleSet/emby.yaml
     interval: 86400
 
+  sport:
+    type: http
+    behavior: classical
+    url: "https://cdn.jsdelivr.net/gh/LeibNici/proxy-provider-convert@main/Rules/SportRule.txt"
+    path: ./RuleSet/sport.yaml
+    interval: 86400
+
 rules:
+  - IP-CIDR,129.146.179.58/8,DIRECT
   - RULE-SET,reject,REJECT
   - DOMAIN,clash.razord.top,DIRECT
   - DOMAIN,yacd.haishan.me,DIRECT
+  - RULE-SET,sport,🚴🏼‍♂️ 运动平台
   - RULE-SET,applications,DIRECT
   - RULE-SET,direct,DIRECT
   - RULE-SET,private,DIRECT
