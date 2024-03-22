@@ -1,14 +1,14 @@
 proxies:
-  - name: 剩余流量：927.21 GB
-    server: 108.181.23.235
+  - name: 剩余流量：927.17 GB
+    server: 178.173.236.227
     port: 443
     udp: true
     skip-cert-verify: true
     sni: tv.apple.com
     type: hysteria2
     password: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
-  - name: 距离下次重置剩余：14 天
-    server: 108.181.23.235
+  - name: 距离下次重置剩余：13 天
+    server: 178.173.236.227
     port: 443
     udp: true
     skip-cert-verify: true
@@ -16,15 +16,63 @@ proxies:
     type: hysteria2
     password: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
   - name: 套餐到期：2024-07-05
-    server: 108.181.23.235
+    server: 178.173.236.227
     port: 443
     udp: true
     skip-cert-verify: true
     sni: tv.apple.com
     type: hysteria2
     password: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
+  - name: 🇭🇰香港 | 高速专线-hy2
+    server: 178.173.236.227
+    port: 443
+    udp: true
+    skip-cert-verify: true
+    sni: tv.apple.com
+    type: hysteria2
+    password: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
+  - name: 🇭🇰香港2 | 高速专线-hy2
+    server: 178.173.236.227
+    port: 443
+    udp: true
+    skip-cert-verify: true
+    sni: tv.apple.com
+    type: hysteria2
+    password: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
+  - name: 🇺🇸美国凤凰城01-0.1倍-hy2
+    server: 163.123.192.149
+    port: 443
+    udp: true
+    skip-cert-verify: true
+    sni: apps.apple.com
+    type: hysteria2
+    password: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
+  - name: 🇺🇸美国凤凰城02-0.1倍-hy2
+    server: 163.123.192.62
+    port: 443
+    udp: true
+    skip-cert-verify: true
+    sni: apps.apple.com
+    type: hysteria2
+    password: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
+  - name: 🇺🇸美国凤凰城03-0.1倍-hy2
+    server: 163.123.192.151
+    port: 443
+    udp: true
+    skip-cert-verify: true
+    sni: music.apple.com
+    type: hysteria2
+    password: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
+  - name: 🇺🇸美国凤凰城04-0.1倍-hy2
+    server: 163.123.192.152
+    port: 443
+    udp: true
+    skip-cert-verify: true
+    sni: music.apple.com
+    type: hysteria2
+    password: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
   - name: 🇺🇸美国洛杉矶01-hy2
-    server: 108.181.23.235
+    server: 108.181.23.71
     port: 443
     udp: true
     skip-cert-verify: true
@@ -61,38 +109,6 @@ proxies:
     udp: true
     skip-cert-verify: true
     sni: www.apple.com
-    type: hysteria2
-    password: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
-  - name: 🇺🇸美国凤凰城01-0.1倍-hy2
-    server: 163.123.192.149
-    port: 443
-    udp: true
-    skip-cert-verify: true
-    sni: apps.apple.com
-    type: hysteria2
-    password: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
-  - name: 🇺🇸美国凤凰城02-0.1倍-hy2
-    server: 163.123.192.62
-    port: 443
-    udp: true
-    skip-cert-verify: true
-    sni: apps.apple.com
-    type: hysteria2
-    password: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
-  - name: 🇺🇸美国凤凰城03-0.1倍-hy2
-    server: 163.123.192.151
-    port: 443
-    udp: true
-    skip-cert-verify: true
-    sni: music.apple.com
-    type: hysteria2
-    password: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
-  - name: 🇺🇸美国凤凰城04-0.1倍-hy2
-    server: 163.123.192.152
-    port: 443
-    udp: true
-    skip-cert-verify: true
-    sni: music.apple.com
     type: hysteria2
     password: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
   - name: 🇯🇵日本亚马逊-hy2
@@ -159,22 +175,6 @@ proxies:
     sni: www.apple.com
     type: hysteria2
     password: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
-  - name: 🇭🇰香港 | 高速专线-hy2
-    server: 178.173.236.227
-    port: 443
-    udp: true
-    skip-cert-verify: true
-    sni: tv.apple.com
-    type: hysteria2
-    password: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
-  - name: 🇭🇰香港2 | 高速专线-hy2
-    server: 178.173.236.227
-    port: 443
-    udp: true
-    skip-cert-verify: true
-    sni: tv.apple.com
-    type: hysteria2
-    password: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
   - name: 🇩🇪德国-hy2
     server: 5.104.108.120
     port: 443
@@ -202,6 +202,17 @@ proxies:
     flow: xtls-rprx-vision
     client-fingerprint: chrome
     servername: b6538631-3a51-4cb4-a0a6-f45b801ce457.hnkkt.com
+  - name: 🇺🇸美国洛杉矶02
+    type: vless
+    server: 108.181.23.235
+    port: 443
+    uuid: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
+    udp: true
+    tls: true
+    skip-cert-verify: false
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    servername: fe808bdc-1d94-48eb-be8e-9d80e5a0ae46.hnkkt.com
   - name: 🇺🇸美国洛杉矶03
     type: vless
     server: 108.181.23.123
@@ -212,7 +223,7 @@ proxies:
     skip-cert-verify: false
     flow: xtls-rprx-vision
     client-fingerprint: chrome
-    servername: eff18483-5c48-4abc-8912-764e2bb8c7bb.hnkkt.com
+    servername: ec7dd76e-f57a-477d-98f1-790ed38cc9ef.hnkkt.com
   - name: 🇺🇸美国洛杉矶04
     type: vless
     server: 108.181.23.231
