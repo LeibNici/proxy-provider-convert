@@ -1,5 +1,5 @@
 proxies:
-  - name: 剩余流量：927.03 GB
+  - name: 剩余流量：924.78 GB
     server: 178.173.236.227
     port: 443
     udp: true
