@@ -1,253 +1,96 @@
-port: 7890
-socks-port: 7891
-mixed-port: 7892
-tproxy-port: 7894
-allow-lan: true
-bind-address: '*'
-mode: rule
-log-level: info
-external-controller: '0.0.0.0:9090'
+#==========================================
+# @UpdateTime        2024/03/25 09:00 UTC/GMT +8
+#==========================================
+
+port: 7890           # HTTP 代理端口
+socks-port: 7891     # Socks 端口
+redir-port: 7892     # Redir 端口
+mixed-port: 7893     # 混合端口
+allow-lan: true      # 允许局域网连接
+bind-address: "*"    # 地址绑定
+mode: rule           # 规则模式
+log-level: info      # 日志级别
+ipv6: false          # IPV6开关
+external-controller: 0.0.0.0:9090
+
 dns:
-  enable: true
-  ipv6: false
-  default-nameserver: [ 223.5.5.5, 119.29.29.29 ]
+  enable: true       # 不使用系统 DNS
+  ipv6: false        # 关闭 IPV6
+  listen: 0.0.0.0:53 # dns 监听
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
-  use-hosts: true
-  nameserver: [ 'https://doh.pub/dns-query', 'https://dns.alidns.com/dns-query' ]
-  fallback: [ 'https://doh.dns.sb/dns-query', 'https://dns.cloudflare.com/dns-query', 'https://dns.twnic.tw/dns-query', 'tls://8.8.4.4:853' ]
-  fallback-filter: { geoip: true, ipcidr: [ 240.0.0.0/4, 0.0.0.0/32 ] }
+  fake-ip-filter:
+    - "*.lan"
+    - localhost.ptlogin2.qq.com
+    - +.srv.nintendo.net
+    - +.stun.playstation.net
+    - +.msftconnecttest.com
+    - +.msftncsi.com
+    - +.xboxlive.com
+    - msftconnecttest.com
+    - xbox.*.microsoft.com
+    - "*.battlenet.com.cn"
+    - "*.battlenet.com"
+    - "*.blzstatic.cn"
+    - "*.battle.net"
+  nameserver:        # 默认 DNS 服务
+    - 223.5.5.5
+    - 119.29.29.29
+  fallback:          # 国外 DNS 服务器
+    - https://cloudflare-dns.com/dns-query
+    - https://dns.google/dns-query
+    - https://dns.alidns.com/dns-query
+  fallback-filter:
+    geoip: true
+    geoip-code: CN
+    ipcidr:
+      - 240.0.0.0/4
+
+######### 锚点 start #######
+subscribe:    	&subscribe 	{type: http,interval: 1800,health-check: {enable: true, url: http://www.gstatic.com/generate_204, interval: 1800} }
+use:  			&use 		{type: select,   use: [Subscribe] }
+p1:				&p1 		{type: select,   proxies: [🚀 手动切换, ♻️ 自动选择, 🇭🇰 香港节点, 🇯🇵 日本节点, 🇺🇲 美国节点, 🇨🇳 台湾节点, 🇸🇬 狮城节点, DIRECT] }		
+c:    			&c 			{type: http,     behavior: classical, interval: 86400}
+d:    			&d 			{type: http,     behavior: domain,    interval: 86400}
+i:    			&i 			{type: http,     behavior: ipcidr,    interval: 86400}
+######### 锚点 end #######
 
 proxy-providers:
-  foo:
-    type: http
-    path: ./foo.yaml
-    url: "http://sub-store.852098505.xyz/asdf1234/download/collection/output"
-    interval: 1800
-    health-check:
-      enable: true
-      url: 'https://cp.cloudflare.com/generate_204'
-      interval: 60
+  Subscribe:
+    <<: *subscribe
+    url: http://sub-store.852098505.xyz/asdf1234/download/collection/output
+    path: ./proxy_providers/subscribe.yaml
 
 proxy-groups:
-
-  - name: 🔰 策略选择
-    type: select
-    proxies:
-      - 🚀 手动切换
-      - ♻️ 自动选择
-      - 🇭🇰 香港节点
-      - 🇯🇵 日本节点
-      - 🇸🇬 新加坡节点
-      - 🇺🇲 美国节点
-      - 🇩🇪 德国节点
-      - DIRECT
-
-  - name: 🚀 手动切换
-    type: select
-    use:
-      - foo
-
-  - name: ♻️ 自动选择
-    type: url-test
-    url: 'https://cp.cloudflare.com/generate_204'
-    use:
-      - foo
-    interval: 60
-    tolerance: 0
-
-  - name: ❤️ Emby公益服
-    type: select
-    proxies:
-      - DIRECT
-      - 🔰 策略选择
-      - 🇭🇰 香港节点
-      - 🇯🇵 日本节点
-      - 🇸🇬 新加坡节点
-      - 🇺🇲 美国节点
-      - 🇩🇪 德国节点
-    use:
-      - foo
-
-  - name: 🚴🏼‍♂️ 运动平台
-    type: select
-    proxies:
-      - 🔰 策略选择
-      - 🚀 手动切换
-      - 🇭🇰 香港节点
-      - 🇯🇵 日本节点
-      - 🇸🇬 新加坡节点
-      - 🇺🇲 美国节点
-      - 🇩🇪 德国节点
-
-  - name: 📲 电报信息
-    type: select
-    proxies:
-      - 🔰 策略选择
-      - 🚀 手动切换
-      - 🇭🇰 香港节点
-      - 🇯🇵 日本节点
-      - 🇸🇬 新加坡节点
-      - 🇺🇲 美国节点
-      - 🇩🇪 德国节点
-
-  - name: 🇭🇰 香港节点
-    type: url-test
-    url: 'https://cp.cloudflare.com/generate_204'
-    use:
-      - foo
-    filter: "(?=.*(🇭🇰|港|虚通|(?i)HK|Hong))(?!.*(回国|校园|游戏|教育|(?i)GAME|IPV6)).*$"
-    interval: 60
-    tolerance: 0
-
-  - name: 🇯🇵 日本节点
-    type: url-test
-    url: 'https://cp.cloudflare.com/generate_204'
-    use:
-      - foo
-    filter: "(?=.*((?i) 🇯🇵|日|川日|东京|大阪|泉日|埼玉|JP|Japan))(?!.*((?i)回国|校园|游戏|教育|久虚|GAME|IPV6)).*$"
-    interval: 60
-    tolerance: 0
-
-  - name: 🇸🇬 新加坡节点
-    type: url-test
-    url: 'https://cp.cloudflare.com/generate_204'
-    use:
-      - foo
-    filter: "(?=.*(🇸🇬|新加坡|狮|(?i)SG|Singapore))(?!.*(回国|校园|游戏|教育|久虚|(?i)GAME|IPV6)).*$"
-    interval: 60
-    tolerance: 0
-
-  - name: 🇺🇲 美国节点
-    type: url-test
-    url: 'https://cp.cloudflare.com/generate_204'
-    use:
-      - foo
-    filter: "(?=.*(🇺🇸|美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|(?i)US|United States))(?!.*(回国|校园|游戏|教育|久虚|(?i)GAME|IPV6)).*$"
-    interval: 60
-    tolerance: 0
-
-  - name: 🇩🇪 德国节点
-    type: url-test
-    url: 'https://cp.cloudflare.com/generate_204'
-    use:
-      - foo
-    filter: "(?=.*(🇩🇪|德|(?i)DE|Germany))(?!.*(回国|校园|游戏|教育|久虚|(?i)GAME|IPV6)).*$"
-    interval: 60
-    tolerance: 0
+  - {name: 🔰 策略选择, <<: *p1}
+  - {name: 🚀 手动切换, <<: *use}
+  - {name: ♻️ 自动选择, <<: *use}
+  - {name: ❤️ Emby公益服, <<: *p1}
+  - {name: 🚴🏼‍♂️ 运动平台, <<: *p1}
+  - {name: 📲 电报信息, <<: *p1}
+  - {name: 🇭🇰 香港节点, <<: *use, filter: "港|HK|(?i)Hong"           }
+  - {name: 🇯🇵 日本节点, <<:  *use, filter: "日|东京|JP|(?i)Japan"     } 
+  - {name: 🇨🇳 台湾节点, <<: *use, filter: "台|湾|TW|(?i)Taiwan"      }
+  - {name: 🇺🇲 美国节点, <<: *use, filter: "美|US|(?i)States|American"}
+  - {name: 🇸🇬 狮城节点, <<: *use, filter: "新|坡|SG|(?i)Singapore"    }
 
 rule-providers:
-  reject:
-    type: http
-    behavior: domain
-    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/reject.txt"
-    path: ./RuleSet/reject.yaml
-    interval: 86400
-
-  icloud:
-    type: http
-    behavior: domain
-    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/icloud.txt"
-    path: ./RuleSet/icloud.yaml
-    interval: 86400
-
-  apple:
-    type: http
-    behavior: domain
-    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/apple.txt"
-    path: ./RuleSet/apple.yaml
-    interval: 86400
-
-  google:
-    type: http
-    behavior: domain
-    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/google.txt"
-    path: ./RuleSet/google.yaml
-    interval: 86400
-
-  proxy:
-    type: http
-    behavior: domain
-    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/proxy.txt"
-    path: ./RuleSet/proxy.yaml
-    interval: 86400
-
-  direct:
-    type: http
-    behavior: domain
-    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/direct.txt"
-    path: ./RuleSet/direct.yaml
-    interval: 86400
-
-  private:
-    type: http
-    behavior: domain
-    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/private.txt"
-    path: ./RuleSet/private.yaml
-    interval: 86400
-
-  gfw:
-    type: http
-    behavior: domain
-    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/gfw.txt"
-    path: ./RuleSet/gfw.yaml
-    interval: 86400
-
-  greatfire:
-    type: http
-    behavior: domain
-    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/greatfire.txt"
-    path: ./RuleSet/greatfire.yaml
-    interval: 86400
-
-  tld-not-cn:
-    type: http
-    behavior: domain
-    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/tld-not-cn.txt"
-    path: ./RuleSet/tld-not-cn.yaml
-    interval: 86400
-
-  telegramcidr:
-    type: http
-    behavior: ipcidr
-    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/telegramcidr.txt"
-    path: ./RuleSet/telegramcidr.yaml
-    interval: 86400
-
-  cncidr:
-    type: http
-    behavior: ipcidr
-    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/cncidr.txt"
-    path: ./RuleSet/cncidr.yaml
-    interval: 86400
-
-  lancidr:
-    type: http
-    behavior: ipcidr
-    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/lancidr.txt"
-    path: ./RuleSet/lancidr.yaml
-    interval: 86400
-
-  applications:
-    type: http
-    behavior: classical
-    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/applications.txt"
-    path: ./RuleSet/applications.yaml
-    interval: 86400
-
-  emby:
-    type: http
-    behavior: classical
-    url: "https://cdn.jsdelivr.net/gh/LeibNici/proxy-provider-convert@main/Rules/EmbyRule.txt"
-    path: ./RuleSet/emby.yaml
-    interval: 86400
-
-  sport:
-    type: http
-    behavior: classical
-    url: "https://cdn.jsdelivr.net/gh/LeibNici/proxy-provider-convert@main/Rules/SportRule.txt"
-    path: ./RuleSet/sport.yaml
-    interval: 86400
+  reject: {<<: *d, url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/reject.txt, path: ./RuleSet/reject.yaml}
+  icloud: {<<: *d, url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/icloud.txt, path: ./RuleSet/icloud.yaml}
+  apple: {<<: *d, url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/apple.txt, path: ./RuleSet/apple.yaml}
+  google: {<<: *d, url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/google.txt, path: ./RuleSet/google.yaml}
+  proxy: {<<: *d, url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/proxy.txt, path: ./RuleSet/proxy.yaml}
+  direct: {<<: *d, url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/direct.txt, path: ./RuleSet/direct.yaml}
+  private: {<<: *d, url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/private.txt, path: ./RuleSet/private.yaml}
+  gfw: {<<: *d, url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/gfw.txt, path: ./RuleSet/gfw.yaml}
+  greatfire: {<<: *d, url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/greatfire.txt, path: ./RuleSet/greatfire.yaml}
+  tld-not-cn: {<<: *d, url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/tld-not-cn.txt, path: ./RuleSet/tld-not-cn.yaml}
+  telegramcidr: {<<: *i, url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/telegramcidr.txt, path: ./RuleSet/telegramcidr.yaml}
+  cncidr: {<<: *i, url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/cncidr.txt, path: ./RuleSet/cncidr.yaml}
+  lancidr: {<<: *i, url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/lancidr.txt, path: ./RuleSet/lancidr.yaml}
+  applications: {<<: *c, url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/applications.txt, path: ./RuleSet/applications.yaml}
+  emby: {<<: *c, url: https://cdn.jsdelivr.net/gh/LeibNici/proxy-provider-convert@main/Rules/EmbyRule.txt, path: ./RuleSet/emby.yaml}
+  sport: {<<: *c, url: https://cdn.jsdelivr.net/gh/LeibNici/proxy-provider-convert@main/Rules/SportRule.txt, path: ./RuleSet/sport.yaml}
 
 rules:
   - IP-CIDR,129.146.179.58/8,DIRECT
