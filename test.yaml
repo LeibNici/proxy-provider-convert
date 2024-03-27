@@ -1,5 +1,5 @@
 proxies:
-  - name: 剩余流量：899.42 GB
+  - name: 剩余流量：899.19 GB
     server: 163.123.192.149
     port: 443
     udp: true
@@ -194,7 +194,7 @@ proxies:
   - name: 🇺🇸美国洛杉矶01
     type: vless
     server: 108.181.23.247
-    port: 443
+    port: 2096
     uuid: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
     udp: true
     tls: true
