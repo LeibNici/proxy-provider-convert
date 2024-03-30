@@ -1,5 +1,5 @@
 proxies:
-  - name: 剩余流量：840.24 GB
+  - name: 剩余流量：839.65 GB
     server: 163.123.192.149
     port: 443
     udp: true
@@ -268,17 +268,6 @@ proxies:
     flow: xtls-rprx-vision
     client-fingerprint: chrome
     servername: dcpqus7.hnkkt.com
-  - name: 🇺🇸美国洛杉矶08
-    type: vless
-    server: 108.181.22.195
-    port: 443
-    uuid: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
-    udp: true
-    tls: true
-    skip-cert-verify: false
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    servername: dcpqus8.hnkkt.com
   - name: 🇺🇸美国凤凰城01-0.1倍
     type: vless
     server: 141.193.68.91
