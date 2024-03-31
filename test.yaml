@@ -1,5 +1,5 @@
 proxies:
-  - name: 剩余流量：816.63 GB
+  - name: 剩余流量：816.62 GB
     server: 163.123.192.149
     port: 443
     udp: true
@@ -93,6 +93,22 @@ proxies:
     udp: true
     skip-cert-verify: true
     sni: www.apple.com
+    type: hysteria2
+    password: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
+  - name: 🇯🇵日本亚马逊-hy2
+    server: 205.178.183.99
+    port: 443
+    udp: true
+    skip-cert-verify: true
+    sni: tv.apple.com
+    type: hysteria2
+    password: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
+  - name: 🇯🇵日本亚马逊2-hy2
+    server: 205.178.183.99
+    port: 443
+    udp: true
+    skip-cert-verify: true
+    sni: tv.apple.com
     type: hysteria2
     password: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
   - name: 🇭🇰香港 | 高速专线-hy2
@@ -226,39 +242,6 @@ proxies:
     flow: xtls-rprx-vision
     client-fingerprint: safari
     servername: dcpqus04.hnkkt.com
-  - name: 🇭🇰香港HKT1 | 高速专线
-    type: vless
-    server: 178.173.236.227
-    port: 443
-    uuid: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
-    udp: true
-    tls: true
-    skip-cert-verify: false
-    flow: xtls-rprx-vision
-    client-fingerprint: firefox
-    servername: dcpqhk.hnkkt.com
-  - name: 🇭🇰香港HKT2 | 高速专线
-    type: vless
-    server: 178.173.236.227
-    port: 443
-    uuid: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
-    udp: true
-    tls: true
-    skip-cert-verify: false
-    flow: xtls-rprx-vision
-    client-fingerprint: safari
-    servername: dcpqhk.hnkkt.com
-  - name: 🇭🇰香港HKT3 | 高速专线
-    type: vless
-    server: 178.173.236.227
-    port: 443
-    uuid: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
-    udp: true
-    tls: true
-    skip-cert-verify: false
-    flow: xtls-rprx-vision
-    client-fingerprint: ios
-    servername: dcpqhk.hnkkt.com
   - name: 🇭🇰香港HKT4 | 高速专线
     type: vless
     server: 957e32be476a.78ab92.98f0fa.a458.h1.108f4143-d0af-4e42-85a0-b13448ab5917.138503301e7d.yydjc.top
@@ -357,7 +340,7 @@ proxies:
       path: /pq/hk1
       headers:
         Host: phk2.pqjc.buzz
-  - name: 🇭🇰香港高速03-0.1倍
+  - name: 🇯🇵日本高速01-0.1倍
     type: vless
     server: 162.159.58.37
     port: 443
@@ -367,13 +350,12 @@ proxies:
     skip-cert-verify: false
     flow: ""
     client-fingerprint: firefox
-    servername: phk3.pqjc.buzz
     network: ws
     ws-opts:
-      path: /pq/hk1
+      path: /pq/jp1
       headers:
-        Host: phk3.pqjc.buzz
-  - name: 🇭🇰香港高速04-0.1倍
+        Host: pjp1.pqjc.buzz
+  - name: 🇯🇵日本高速02-0.1倍
     type: vless
     server: 162.159.58.29
     port: 443
@@ -383,12 +365,11 @@ proxies:
     skip-cert-verify: false
     flow: ""
     client-fingerprint: safari
-    servername: phk4.pqjc.buzz
     network: ws
     ws-opts:
-      path: /pq/hk1
+      path: /pq/jp1
       headers:
-        Host: phk4.pqjc.buzz
+        Host: pjp2.pqjc.buzz
   - name: 🇸🇬新加坡高速01-0.1倍
     type: vless
     server: 162.159.58.29
@@ -450,9 +431,9 @@ proxies:
     servername: p3sg4.pqjc.buzz
     network: ws
     ws-opts:
-      path: /pq/sg1
+      path: /pq/sg2
       headers:
-        Host: psg1.pqjc.buzz
+        Host: p3sg4.pqjc.buzz
   - name: 🇺🇸美国凤凰城1-0.01倍
     type: vless
     server: 162.159.58.29
