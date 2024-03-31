@@ -1,5 +1,5 @@
 proxies:
-  - name: 剩余流量：830.25 GB
+  - name: 剩余流量：829.57 GB
     server: 163.123.192.149
     port: 443
     udp: true
@@ -89,70 +89,6 @@ proxies:
     password: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
   - name: 🇺🇸美国洛杉矶05-hy2
     server: 108.181.22.153
-    port: 443
-    udp: true
-    skip-cert-verify: true
-    sni: www.apple.com
-    type: hysteria2
-    password: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
-  - name: 🇯🇵日本亚马逊-hy2
-    server: pqjp1.yydjc.top
-    port: 443
-    udp: true
-    skip-cert-verify: true
-    sni: tv.apple.com
-    type: hysteria2
-    password: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
-  - name: 🇯🇵日本亚马逊2-hy2
-    server: pqjp2.yydjc.top
-    port: 443
-    udp: true
-    skip-cert-verify: true
-    sni: tv.apple.com
-    type: hysteria2
-    password: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
-  - name: 🇯🇵日本亚马逊3-hy2
-    server: pqjp3.yydjc.top
-    port: 443
-    udp: true
-    skip-cert-verify: true
-    sni: www.apple.com
-    type: hysteria2
-    password: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
-  - name: 🇯🇵日本亚马逊4-hy2
-    server: pqjp4.yydjc.top
-    port: 443
-    udp: true
-    skip-cert-verify: true
-    sni: www.apple.com
-    type: hysteria2
-    password: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
-  - name: 🇸🇬新加坡亚马逊-hy2
-    server: pqsg1.yydjc.top
-    port: 443
-    udp: true
-    skip-cert-verify: true
-    sni: www.apple.com
-    type: hysteria2
-    password: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
-  - name: 🇸🇬新加坡亚马逊2-hy2
-    server: pqsg2.yydjc.top
-    port: 443
-    udp: true
-    skip-cert-verify: true
-    sni: www.apple.com
-    type: hysteria2
-    password: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
-  - name: 🇸🇬新加坡亚马逊3-hy2
-    server: pqsg3.yydjc.top
-    port: 443
-    udp: true
-    skip-cert-verify: true
-    sni: www.apple.com
-    type: hysteria2
-    password: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
-  - name: 🇸🇬新加坡亚马逊4-hy2
-    server: pqsg4.yydjc.top
     port: 443
     udp: true
     skip-cert-verify: true
@@ -257,17 +193,6 @@ proxies:
     flow: xtls-rprx-vision
     client-fingerprint: chrome
     servername: dcpqus6.hnkkt.com
-  - name: 🇺🇸美国洛杉矶07
-    type: vless
-    server: 108.181.23.253
-    port: 2096
-    uuid: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
-    udp: true
-    tls: true
-    skip-cert-verify: false
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    servername: dcpqus7.hnkkt.com
   - name: 🇺🇸美国凤凰城01-0.1倍
     type: vless
     server: 141.193.68.91
@@ -312,6 +237,39 @@ proxies:
     flow: xtls-rprx-vision
     client-fingerprint: safari
     servername: dcpqus04.hnkkt.com
+  - name: 🇭🇰香港HKT1 | 高速专线
+    type: vless
+    server: 178.173.236.227
+    port: 443
+    uuid: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
+    udp: true
+    tls: true
+    skip-cert-verify: false
+    flow: xtls-rprx-vision
+    client-fingerprint: firefox
+    servername: dcpqhk.hnkkt.com
+  - name: 🇭🇰香港HKT2 | 高速专线
+    type: vless
+    server: 178.173.236.227
+    port: 443
+    uuid: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
+    udp: true
+    tls: true
+    skip-cert-verify: false
+    flow: xtls-rprx-vision
+    client-fingerprint: safari
+    servername: dcpqhk.hnkkt.com
+  - name: 🇭🇰香港HKT3 | 高速专线
+    type: vless
+    server: 178.173.236.227
+    port: 443
+    uuid: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
+    udp: true
+    tls: true
+    skip-cert-verify: false
+    flow: xtls-rprx-vision
+    client-fingerprint: ios
+    servername: dcpqhk.hnkkt.com
   - name: 🇭🇰香港HKT4 | 高速专线
     type: vless
     server: 957e32be476a.78ab92.98f0fa.a458.h1.108f4143-d0af-4e42-85a0-b13448ab5917.138503301e7d.yydjc.top
