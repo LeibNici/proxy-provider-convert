@@ -1,5 +1,5 @@
 proxies:
-  - name: 剩余流量：829.56 GB
+  - name: 剩余流量：824.05 GB
     server: 163.123.192.149
     port: 443
     udp: true
@@ -402,7 +402,7 @@ proxies:
         Host: phk4.pqjc.buzz
   - name: 🇸🇬新加坡高速01-0.1倍
     type: vless
-    server: 185.146.173.38
+    server: 162.159.58.29
     port: 443
     uuid: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
     udp: true
@@ -418,7 +418,7 @@ proxies:
         Host: psg1.pqjc.buzz
   - name: 🇸🇬新加坡高速02-0.1倍
     type: vless
-    server: 185.146.173.183
+    server: 162.159.58.29
     port: 443
     uuid: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
     udp: true
@@ -434,7 +434,7 @@ proxies:
         Host: psg2.pqjc.buzz
   - name: 🇸🇬新加坡高速03-0.1倍
     type: vless
-    server: 167.68.5.83
+    server: 162.159.58.29
     port: 443
     uuid: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
     udp: true
@@ -450,7 +450,7 @@ proxies:
         Host: p2sg3.pqjc.buzz
   - name: 🇸🇬新加坡高速04-0.1倍
     type: vless
-    server: 79.99.28.49
+    server: 162.159.58.29
     port: 443
     uuid: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
     udp: true
@@ -466,7 +466,7 @@ proxies:
         Host: psg1.pqjc.buzz
   - name: 🇺🇸美国凤凰城1-0.01倍
     type: vless
-    server: 77.37.33.69
+    server: 162.159.58.29
     port: 443
     uuid: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
     udp: true
@@ -482,7 +482,7 @@ proxies:
         Host: p5us1.pqjc.buzz
   - name: 🇺🇸美国凤凰城2-0.01倍
     type: vless
-    server: 77.37.33.82
+    server: 162.159.58.29
     port: 443
     uuid: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
     udp: true
@@ -498,7 +498,7 @@ proxies:
         Host: 5us2.pqjc.buzz
   - name: 🇺🇸美国凤凰城3-0.01倍
     type: vless
-    server: 77.75.199.43
+    server: 162.159.58.29
     port: 443
     uuid: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
     udp: true
@@ -514,7 +514,7 @@ proxies:
         Host: 63us3.pqjc.buzz
   - name: 🇺🇸美国凤凰城4-0.01倍
     type: vless
-    server: 77.75.199.38
+    server: 162.159.58.29
     port: 443
     uuid: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
     udp: true
