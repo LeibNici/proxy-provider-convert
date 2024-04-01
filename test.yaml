@@ -1,5 +1,5 @@
 proxies:
-  - name: 剩余流量：811.13 GB
+  - name: 剩余流量：808.22 GB
     server: 163.123.192.149
     port: 443
     udp: true
@@ -7,7 +7,7 @@ proxies:
     sni: apps.apple.com
     type: hysteria2
     password: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
-  - name: 距离下次重置剩余：4 天
+  - name: 距离下次重置剩余：3 天
     server: 163.123.192.149
     port: 443
     udp: true
@@ -109,6 +109,38 @@ proxies:
     udp: true
     skip-cert-verify: true
     sni: tv.apple.com
+    type: hysteria2
+    password: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
+  - name: 🇸🇬新加坡亚马逊-hy2
+    server: 205.178.183.132
+    port: 443
+    udp: true
+    skip-cert-verify: true
+    sni: www.apple.com
+    type: hysteria2
+    password: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
+  - name: 🇸🇬新加坡亚马逊2-hy2
+    server: 205.178.183.132
+    port: 443
+    udp: true
+    skip-cert-verify: true
+    sni: www.apple.com
+    type: hysteria2
+    password: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
+  - name: 🇸🇬新加坡亚马逊3-hy2
+    server: 205.178.183.174
+    port: 443
+    udp: true
+    skip-cert-verify: true
+    sni: www.apple.com
+    type: hysteria2
+    password: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
+  - name: 🇸🇬新加坡亚马逊4-hy2
+    server: 205.178.183.174
+    port: 443
+    udp: true
+    skip-cert-verify: true
+    sni: www.apple.com
     type: hysteria2
     password: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
   - name: 🇭🇰香港 | 高速专线-hy2
