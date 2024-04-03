@@ -1,5 +1,5 @@
 proxies:
-  - name: 剩余流量：797.76 GB
+  - name: 剩余流量：796.44 GB
     server: 163.123.192.149
     port: 443
     udp: true
@@ -7,7 +7,7 @@ proxies:
     sni: apps.apple.com
     type: hysteria2
     password: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
-  - name: 距离下次重置剩余：2 天
+  - name: 距离下次重置剩余：1 天
     server: 163.123.192.149
     port: 443
     udp: true
@@ -111,6 +111,22 @@ proxies:
     sni: tv.apple.com
     type: hysteria2
     password: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
+  - name: 🇧🇷巴西 | 高速专线-hy2
+    server: 167.234.251.78
+    port: 443
+    udp: true
+    skip-cert-verify: true
+    sni: www.apple.com
+    type: hysteria2
+    password: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
+  - name: 🇧🇷巴西2 | 高速专线-hy2
+    server: 150.230.89.61
+    port: 443
+    udp: true
+    skip-cert-verify: true
+    sni: www.apple.com
+    type: hysteria2
+    password: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
   - name: 🇸🇬新加坡亚马逊-hy2
     server: 205.178.183.132
     port: 443
@@ -159,7 +175,7 @@ proxies:
     sni: tv.apple.com
     type: hysteria2
     password: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
-  - name: 🇩🇪德国-hy2
+  - name: 🇩🇪德国 | 高速专线-hy2
     server: 138.3.255.157
     port: 443
     udp: true
@@ -167,12 +183,68 @@ proxies:
     sni: api.push.apple.com
     type: hysteria2
     password: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
-  - name: 🇩🇪德国2-hy2
+  - name: 🇩🇪德国2 | 高速专线-hy2
     server: 158.180.46.100
     port: 443
     udp: true
     skip-cert-verify: true
     sni: api.push.apple.com
+    type: hysteria2
+    password: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
+  - name: 🇩🇪德国3 | 高速专线-hy2
+    server: 130.61.223.125
+    port: 443
+    udp: true
+    skip-cert-verify: true
+    sni: www.apple.com
+    type: hysteria2
+    password: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
+  - name: 🇰🇷韩国 | 高速专线-hy2
+    server: 193.122.113.204
+    port: 443
+    udp: true
+    skip-cert-verify: true
+    sni: www.apple.com
+    type: hysteria2
+    password: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
+  - name: 🇰🇷韩国2 | 高速专线-hy2
+    server: 152.69.225.196
+    port: 443
+    udp: true
+    skip-cert-verify: true
+    sni: www.apple.com
+    type: hysteria2
+    password: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
+  - name: 🇰🇷韩国3 | 高速专线-hy2
+    server: 144.24.67.167
+    port: 443
+    udp: true
+    skip-cert-verify: true
+    sni: www.apple.com
+    type: hysteria2
+    password: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
+  - name: 🇳🇱荷兰 | 高速专线-hy2
+    server: 158.101.218.147
+    port: 443
+    udp: true
+    skip-cert-verify: true
+    sni: www.apple.com
+    type: hysteria2
+    password: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
+  - name: 🇺🇸美国芝加哥 | 高速专线-hy2
+    server: 207.211.183.244
+    port: 443
+    udp: true
+    skip-cert-verify: true
+    sni: www.apple.com
+    type: hysteria2
+    password: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
+  - name: 🇸🇪瑞典 | 高速专线-hy2
+    server: 129.151.220.170
+    port: 443
+    udp: true
+    skip-cert-verify: true
+    sni: www.apple.com
     type: hysteria2
     password: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
   - name: 🇺🇸美国洛杉矶02
