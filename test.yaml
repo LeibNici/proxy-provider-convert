@@ -1,5 +1,5 @@
 proxies:
-  - name: 剩余流量：795 GB
+  - name: 剩余流量：794.8 GB
     server: 163.123.192.149
     port: 443
     udp: true
@@ -346,17 +346,6 @@ proxies:
     flow: xtls-rprx-vision
     client-fingerprint: safari
     servername: dcpqus04.hnkkt.com
-  - name: 🇭🇰香港HKT1 | 高速专线
-    type: vless
-    server: 178.173.236.226
-    port: 443
-    uuid: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
-    udp: true
-    tls: true
-    skip-cert-verify: false
-    flow: xtls-rprx-vision
-    client-fingerprint: firefox
-    servername: dcpqhk1.hnkkt.com
   - name: 🇭🇰香港HKT4 | 高速专线
     type: vless
     server: 957e32be476a.78ab92.98f0fa.a458.h1.108f4143-d0af-4e42-85a0-b13448ab5917.138503301e7d.yydjc.top
