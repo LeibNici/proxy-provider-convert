@@ -1,5 +1,5 @@
 proxies:
-  - name: 剩余流量：938.11 GB
+  - name: 剩余流量：938.06 GB
     server: 163.123.192.149
     port: 443
     udp: true
@@ -644,3 +644,47 @@ proxies:
     flow: xtls-rprx-vision
     client-fingerprint: ios
     servername: dcpqfr2.hnkkt.com
+  - name: 🇬🇧英国伦敦
+    type: vless
+    server: 144.21.54.190
+    port: 443
+    uuid: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
+    udp: true
+    tls: true
+    skip-cert-verify: false
+    flow: xtls-rprx-vision
+    client-fingerprint: firefox
+    servername: dcpqgb1.hnkkt.com
+  - name: 🇬🇧英国伦敦2
+    type: vless
+    server: 144.21.57.141
+    port: 443
+    uuid: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
+    udp: true
+    tls: true
+    skip-cert-verify: false
+    flow: xtls-rprx-vision
+    client-fingerprint: firefox
+    servername: dcpqgb2.hnkkt.com
+  - name: 🇩🇪德国
+    type: vless
+    server: 138.2.163.104
+    port: 443
+    uuid: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
+    udp: true
+    tls: true
+    skip-cert-verify: false
+    flow: xtls-rprx-vision
+    client-fingerprint: firefox
+    servername: dcpqde1.hnkkt.com
+  - name: 🇩🇪德国2
+    type: vless
+    server: 141.147.29.85
+    port: 443
+    uuid: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
+    udp: true
+    tls: true
+    skip-cert-verify: false
+    flow: xtls-rprx-vision
+    client-fingerprint: safari
+    servername: dcpqde2.hnkkt.com
