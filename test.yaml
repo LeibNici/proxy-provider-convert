@@ -1,5 +1,5 @@
 proxies:
-  - name: 剩余流量：938.3 GB
+  - name: 剩余流量：938.11 GB
     server: 163.123.192.149
     port: 443
     udp: true
@@ -7,7 +7,7 @@ proxies:
     sni: apps.apple.com
     type: hysteria2
     password: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
-  - name: 距离下次重置剩余：26 天
+  - name: 距离下次重置剩余：25 天
     server: 163.123.192.149
     port: 443
     udp: true
@@ -622,3 +622,25 @@ proxies:
       path: /pq/us4
       headers:
         Host: p8us4.pqjc.buzz
+  - name: 🇫🇷法国
+    type: vless
+    server: 129.151.232.209
+    port: 443
+    uuid: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
+    udp: true
+    tls: true
+    skip-cert-verify: false
+    flow: xtls-rprx-vision
+    client-fingerprint: safari
+    servername: dcpqfr1.hnkkt.com
+  - name: 🇫🇷法国2
+    type: vless
+    server: 144.24.195.74
+    port: 443
+    uuid: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
+    udp: true
+    tls: true
+    skip-cert-verify: false
+    flow: xtls-rprx-vision
+    client-fingerprint: ios
+    servername: dcpqfr2.hnkkt.com
