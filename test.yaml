@@ -1,5 +1,5 @@
 proxies:
-  - name: 剩余流量：929.66 GB
+  - name: 剩余流量：927.76 GB
     server: 163.123.192.149
     port: 443
     udp: true
@@ -81,6 +81,14 @@ proxies:
     password: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
   - name: 电信/联通推荐 | 🇺🇸美国洛杉矶04-hy2
     server: 108.181.23.253
+    port: 443
+    udp: true
+    skip-cert-verify: true
+    sni: www.apple.com
+    type: hysteria2
+    password: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
+  - name: 电信/联通推荐 | 🇺🇸美国洛杉矶05-hy2
+    server: 208.87.243.155
     port: 443
     udp: true
     skip-cert-verify: true
@@ -215,17 +223,6 @@ proxies:
     sni: www.apple.com
     type: hysteria2
     password: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
-  - name: 联通/电信推荐 | 🇺🇸美国洛杉矶01
-    type: vless
-    server: 108.181.24.43
-    port: 443
-    uuid: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
-    udp: true
-    tls: true
-    skip-cert-verify: false
-    flow: xtls-rprx-vision
-    client-fingerprint: safari
-    servername: dcpqus1.hnkkt.com
   - name: 联通/电信推荐 | 🇺🇸美国洛杉矶02
     type: vless
     server: 108.181.23.235
@@ -281,17 +278,6 @@ proxies:
     flow: xtls-rprx-vision
     client-fingerprint: chrome
     servername: dcpqus6.hnkkt.com
-  - name: 联通/电信推荐 | 🇺🇸美国洛杉矶07
-    type: vless
-    server: 108.181.22.153
-    port: 443
-    uuid: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
-    udp: true
-    tls: true
-    skip-cert-verify: false
-    flow: xtls-rprx-vision
-    client-fingerprint: firefox
-    servername: dcpqus7.hnkkt.com
   - name: 联通/移动/电信推荐 | 🇰🇷韩国-5倍
     type: vless
     server: 193.123.237.143
