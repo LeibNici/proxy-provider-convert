@@ -1,5 +1,5 @@
 proxies:
-  - name: 剩余流量：927.06 GB
+  - name: 剩余流量：910.21 GB
     server: 163.123.192.149
     port: 443
     udp: true
@@ -223,6 +223,17 @@ proxies:
     sni: www.apple.com
     type: hysteria2
     password: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
+  - name: 联通/电信推荐 | 🇺🇸美国洛杉矶01
+    type: vless
+    server: 108.181.24.43
+    port: 443
+    uuid: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
+    udp: true
+    tls: true
+    skip-cert-verify: false
+    flow: xtls-rprx-vision
+    client-fingerprint: safari
+    servername: dcpqus.hnkkt.com
   - name: 联通/电信推荐 | 🇺🇸美国洛杉矶02
     type: vless
     server: 108.181.23.235
@@ -233,18 +244,18 @@ proxies:
     skip-cert-verify: false
     flow: xtls-rprx-vision
     client-fingerprint: chrome
-    servername: dcpqus2.hnkkt.com
+    servername: dcpqus.hnkkt.com
   - name: 联通/电信推荐 | 🇺🇸美国洛杉矶03
     type: vless
     server: 108.181.23.123
-    port: 443
+    port: 8443
     uuid: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
     udp: true
     tls: true
     skip-cert-verify: false
     flow: xtls-rprx-vision
     client-fingerprint: chrome
-    servername: dcpqus3.hnkkt.com
+    servername: dcpqus.hnkkt.com
   - name: 联通/电信推荐 | 🇺🇸美国洛杉矶04
     type: vless
     server: 108.181.23.231
@@ -255,18 +266,18 @@ proxies:
     skip-cert-verify: false
     flow: xtls-rprx-vision
     client-fingerprint: chrome
-    servername: dcpqus4.hnkkt.com
+    servername: dcpqus.hnkkt.com
   - name: 联通/电信推荐 | 🇺🇸美国洛杉矶05
     type: vless
     server: 108.181.23.241
-    port: 443
+    port: 8443
     uuid: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
     udp: true
     tls: true
     skip-cert-verify: false
     flow: xtls-rprx-vision
     client-fingerprint: chrome
-    servername: dcpqus5.hnkkt.com
+    servername: dcpqus.hnkkt.com
   - name: 联通/电信推荐 | 🇺🇸美国洛杉矶06
     type: vless
     server: 108.181.23.255
@@ -277,7 +288,18 @@ proxies:
     skip-cert-verify: false
     flow: xtls-rprx-vision
     client-fingerprint: chrome
-    servername: dcpqus6.hnkkt.com
+    servername: dcpqus.hnkkt.com
+  - name: 联通/电信推荐 | 🇺🇸美国洛杉矶07
+    type: vless
+    server: 108.181.22.153
+    port: 443
+    uuid: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
+    udp: true
+    tls: true
+    skip-cert-verify: false
+    flow: xtls-rprx-vision
+    client-fingerprint: firefox
+    servername: dcpqus.hnkkt.com
   - name: 联通/移动/电信推荐 | 🇰🇷韩国-5倍
     type: vless
     server: 193.123.237.143
@@ -333,6 +355,28 @@ proxies:
     flow: xtls-rprx-vision
     client-fingerprint: safari
     servername: dcpqus04.hnkkt.com
+  - name: 移动/联通推荐 | 🇭🇰香港HKT2
+    type: vless
+    server: 178.173.236.225
+    port: 443
+    uuid: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
+    udp: true
+    tls: true
+    skip-cert-verify: false
+    flow: xtls-rprx-vision
+    client-fingerprint: safari
+    servername: dcpqhk2.hnkkt.com
+  - name: 移动/联通推荐 | 🇭🇰香港HKT3
+    type: vless
+    server: 178.173.236.227
+    port: 443
+    uuid: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
+    udp: true
+    tls: true
+    skip-cert-verify: false
+    flow: xtls-rprx-vision
+    client-fingerprint: ios
+    servername: dcpqhk3.hnkkt.com
   - name: 电信/移动/联通推荐 | 🇭🇰香港HKT4
     type: vless
     server: 957e32be476a.78ab92.98f0fa.a458.h1.108f4143-d0af-4e42-85a0-b13448ab5917.138503301e7d.yydjc.top
