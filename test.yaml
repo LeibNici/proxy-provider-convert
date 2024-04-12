@@ -1,5 +1,5 @@
 proxies:
-  - name: 剩余流量：898.64 GB
+  - name: 剩余流量：898.11 GB
     server: 163.123.192.149
     port: 443
     udp: true
@@ -185,6 +185,14 @@ proxies:
     password: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
   - name: 🇰🇷韩国4-5倍 | 高速专线-hy2
     server: 146.56.174.194
+    port: 443
+    udp: true
+    skip-cert-verify: true
+    sni: api.push.apple.com
+    type: hysteria2
+    password: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
+  - name: 🇰🇷韩国5-5倍 | 高速专线-hy2
+    server: 193.123.248.37
     port: 443
     udp: true
     skip-cert-verify: true
