@@ -1,5 +1,5 @@
 proxies:
-  - name: 剩余流量：857.25 GB
+  - name: 剩余流量：857.22 GB
     server: 163.123.192.149
     port: 443
     udp: true
@@ -340,7 +340,7 @@ proxies:
     flow: xtls-rprx-vision
     client-fingerprint: firefox
     servername: dcpqus.hnkkt.com
-  - name: 联通/移动/电信推荐 | 🇰🇷韩国-5倍
+  - name: 联通/移动/电信推荐 | 🇰🇷韩国-2.5倍
     type: vless
     server: 193.123.237.143
     port: 443
@@ -350,7 +350,29 @@ proxies:
     skip-cert-verify: false
     flow: xtls-rprx-vision
     client-fingerprint: chrome
-    servername: dcpqkr1.hnkkt.com
+    servername: dcpqkr.hnkkt.com
+  - name: 联通/移动/电信推荐 | 🇰🇷韩国2-2.5倍
+    type: vless
+    server: 129.154.219.226
+    port: 443
+    uuid: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
+    udp: true
+    tls: true
+    skip-cert-verify: false
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    servername: dcpqkr.hnkkt.com
+  - name: 🇸🇬新加坡
+    type: vless
+    server: 213.35.119.223
+    port: 443
+    uuid: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
+    udp: true
+    tls: true
+    skip-cert-verify: false
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    servername: dcpqsg.hnkkt.com
   - name: 🇺🇸美国凤凰城01-0.1倍
     type: vless
     server: 141.193.68.91
