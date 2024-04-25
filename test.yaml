@@ -1,5 +1,5 @@
 proxies:
-  - name: 剩余流量：767.52 GB
+  - name: 剩余流量：762.96 GB
     server: 163.123.192.149
     port: 443
     udp: true
@@ -7,7 +7,7 @@ proxies:
     sni: apps.apple.com
     type: hysteria2
     password: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
-  - name: 距离下次重置剩余：10 天
+  - name: 距离下次重置剩余：9 天
     server: 163.123.192.149
     port: 443
     udp: true
@@ -665,7 +665,7 @@ proxies:
         Host: 5us2.pqjc.buzz
   - name: 🇺🇸美国凤凰城3-0.01倍
     type: vless
-    server: 104.16.199.90
+    server: 104.19.38.90
     port: 443
     uuid: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
     udp: true
@@ -681,7 +681,7 @@ proxies:
         Host: 63us3.pqjc.buzz
   - name: 🇺🇸美国凤凰城4-0.01倍
     type: vless
-    server: 104.16.199.90
+    server: 104.19.38.90
     port: 443
     uuid: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
     udp: true
