@@ -1,5 +1,5 @@
 proxies:
-  - name: 剩余流量：708.42 GB
+  - name: 剩余流量：707.38 GB
     server: 163.123.192.149
     port: 443
     udp: true
@@ -277,7 +277,7 @@ proxies:
   - name: 联通/电信推荐 | 🇺🇸美国洛杉矶02
     type: vless
     server: 108.181.23.235
-    port: 8443
+    port: 2087
     uuid: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
     udp: true
     tls: true
