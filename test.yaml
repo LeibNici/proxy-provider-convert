@@ -1,5 +1,5 @@
 proxies:
-  - name: 剩余流量：957.17 GB
+  - name: 剩余流量：957.16 GB
     server: 163.123.192.149
     port: 443
     udp: true
@@ -215,6 +215,14 @@ proxies:
     sni: www.apple.com
     type: hysteria2
     password: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
+  - name: 🇰🇷韩国8-3倍 | 高速专线-hy2
+    server: 158.180.90.87
+    port: 443
+    udp: true
+    skip-cert-verify: true
+    sni: www.apple.com
+    type: hysteria2
+    password: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
   - name: 🇳🇱荷兰 | 高速专线-hy2
     server: 158.101.218.147
     port: 443
@@ -362,6 +370,17 @@ proxies:
     flow: xtls-rprx-vision
     client-fingerprint: chrome
     servername: dcpqkr.hnkkt.com
+  - name: 联通/移动/电信推荐 | 🇰🇷韩国3-2.5倍
+    type: vless
+    server: 132.226.231.130
+    port: 443
+    uuid: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
+    udp: true
+    tls: true
+    skip-cert-verify: false
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    servername: dcpqkr.hnkkt.com
   - name: 🇸🇬新加坡
     type: vless
     server: 213.35.119.223
@@ -373,6 +392,17 @@ proxies:
     flow: xtls-rprx-vision
     client-fingerprint: chrome
     servername: dcpqsg.hnkkt.com
+  - name: 🇯🇵日本东京
+    type: vless
+    server: 152.70.99.180
+    port: 443
+    uuid: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
+    udp: true
+    tls: true
+    skip-cert-verify: false
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    servername: dcpqjp.hnkkt.com
   - name: 🇺🇸美国凤凰城01-0.1倍
     type: vless
     server: 141.193.68.91
