@@ -1,5 +1,5 @@
 proxies:
-  - name: 剩余流量：945.47 GB
+  - name: 剩余流量：944.99 GB
     server: 163.123.192.149
     port: 443
     udp: true
@@ -136,14 +136,6 @@ proxies:
     type: hysteria2
     password: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
   - name: 🇸🇬新加坡亚马逊2-hy2
-    server: 205.178.183.132
-    port: 443
-    udp: true
-    skip-cert-verify: true
-    sni: www.apple.com
-    type: hysteria2
-    password: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
-  - name: 🇸🇬新加坡亚马逊3-hy2
     server: 205.178.183.174
     port: 443
     udp: true
@@ -151,8 +143,16 @@ proxies:
     sni: www.apple.com
     type: hysteria2
     password: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
-  - name: 🇸🇬新加坡亚马逊4-hy2
-    server: 205.178.183.174
+  - name: 🇫🇷法国 | 高速专线-hy2
+    server: 129.151.249.89
+    port: 443
+    udp: true
+    skip-cert-verify: true
+    sni: www.apple.com
+    type: hysteria2
+    password: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
+  - name: 🇫🇷法国2 | 高速专线-hy2
+    server: 129.151.242.47
     port: 443
     udp: true
     skip-cert-verify: true
@@ -361,7 +361,7 @@ proxies:
     servername: dcpqkr.hnkkt.com
   - name: 联通/移动/电信推荐 | 🇰🇷韩国2-2.5倍
     type: vless
-    server: 129.154.219.226
+    server: 193.122.110.217
     port: 443
     uuid: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
     udp: true
