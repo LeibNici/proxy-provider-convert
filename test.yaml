@@ -1,5 +1,5 @@
 proxies:
-  - name: 剩余流量：942.47 GB
+  - name: 剩余流量：938.18 GB
     server: 163.123.192.149
     port: 443
     udp: true
@@ -207,8 +207,16 @@ proxies:
     sni: www.apple.com
     type: hysteria2
     password: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
-  - name: 🇰🇷韩国7-3倍 | 高速专线-hy2
+  - name: 🇰🇷韩国7-2倍 | 高速专线-hy2
     server: 152.69.225.196
+    port: 443
+    udp: true
+    skip-cert-verify: true
+    sni: www.apple.com
+    type: hysteria2
+    password: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
+  - name: 🇰🇷韩国8-2倍 | 高速专线-hy2
+    server: 146.56.100.103
     port: 443
     udp: true
     skip-cert-verify: true
