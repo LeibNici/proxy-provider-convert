@@ -348,7 +348,7 @@ proxies:
     flow: xtls-rprx-vision
     client-fingerprint: firefox
     servername: dcpqus.hnkkt.com
-  - name: 联通/移动/电信推荐 | 🇰🇷韩国-2.5倍
+  - name: 联通/移动/电信推荐 | 🇰🇷韩国-3倍
     type: vless
     server: 193.123.237.143
     port: 443
@@ -359,7 +359,7 @@ proxies:
     flow: xtls-rprx-vision
     client-fingerprint: chrome
     servername: dcpqkr.hnkkt.com
-  - name: 联通/移动/电信推荐 | 🇰🇷韩国2-2.5倍
+  - name: 联通/移动/电信推荐 | 🇰🇷韩国2-3倍
     type: vless
     server: 193.122.110.217
     port: 443
@@ -370,7 +370,7 @@ proxies:
     flow: xtls-rprx-vision
     client-fingerprint: chrome
     servername: dcpqkr.hnkkt.com
-  - name: 联通/移动/电信推荐 | 🇰🇷韩国3-2.5倍
+  - name: 联通/移动/电信推荐 | 🇰🇷韩国3-3倍
     type: vless
     server: 132.226.231.130
     port: 443
