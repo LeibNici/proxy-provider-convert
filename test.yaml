@@ -1,5 +1,5 @@
 proxies:
-  - name: 剩余流量：901.95 GB
+  - name: 剩余流量：901.7 GB
     server: 163.123.192.149
     port: 443
     udp: true
@@ -7,7 +7,7 @@ proxies:
     sni: apps.apple.com
     type: hysteria2
     password: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
-  - name: 距离下次重置剩余：19 天
+  - name: 距离下次重置剩余：18 天
     server: 163.123.192.149
     port: 443
     udp: true
@@ -121,22 +121,6 @@ proxies:
     password: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
   - name: 🇧🇷巴西2 | 高速专线-hy2
     server: 150.230.89.61
-    port: 443
-    udp: true
-    skip-cert-verify: true
-    sni: www.apple.com
-    type: hysteria2
-    password: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
-  - name: 🇸🇬新加坡亚马逊-hy2
-    server: 205.178.183.132
-    port: 443
-    udp: true
-    skip-cert-verify: true
-    sni: www.apple.com
-    type: hysteria2
-    password: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
-  - name: 🇸🇬新加坡亚马逊2-hy2
-    server: 205.178.183.174
     port: 443
     udp: true
     skip-cert-verify: true
@@ -561,7 +545,7 @@ proxies:
         Host: phk2.pqjc.buzz
   - name: 🇯🇵日本高速01-0.1倍
     type: vless
-    server: 162.159.58.37
+    server: 104.19.36.208
     port: 443
     uuid: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
     udp: true
@@ -576,7 +560,7 @@ proxies:
         Host: pjp1.pqjc.buzz
   - name: 🇯🇵日本高速02-0.1倍
     type: vless
-    server: 162.159.58.29
+    server: 104.19.36.208
     port: 443
     uuid: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
     udp: true
@@ -589,70 +573,6 @@ proxies:
       path: /pq/jp1
       headers:
         Host: pjp2.pqjc.buzz
-  - name: 🇸🇬新加坡高速01-0.1倍
-    type: vless
-    server: 162.159.58.29
-    port: 443
-    uuid: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
-    udp: true
-    tls: true
-    skip-cert-verify: false
-    flow: ""
-    client-fingerprint: ios
-    servername: psg1.pqjc.buzz
-    network: ws
-    ws-opts:
-      path: /pq/sg1
-      headers:
-        Host: psg1.pqjc.buzz
-  - name: 🇸🇬新加坡高速02-0.1倍
-    type: vless
-    server: 162.159.58.29
-    port: 443
-    uuid: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
-    udp: true
-    tls: true
-    skip-cert-verify: false
-    flow: ""
-    client-fingerprint: firefox
-    servername: psg2.pqjc.buzz
-    network: ws
-    ws-opts:
-      path: /pq/sg1
-      headers:
-        Host: psg2.pqjc.buzz
-  - name: 🇸🇬新加坡高速03-0.1倍
-    type: vless
-    server: 162.159.58.29
-    port: 443
-    uuid: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
-    udp: true
-    tls: true
-    skip-cert-verify: false
-    flow: ""
-    client-fingerprint: ios
-    servername: p2sg3.pqjc.buzz
-    network: ws
-    ws-opts:
-      path: /pq/sg2
-      headers:
-        Host: p2sg3.pqjc.buzz
-  - name: 🇸🇬新加坡高速04-0.1倍
-    type: vless
-    server: 162.159.58.29
-    port: 443
-    uuid: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
-    udp: true
-    tls: true
-    skip-cert-verify: false
-    flow: ""
-    client-fingerprint: firefox
-    servername: p3sg4.pqjc.buzz
-    network: ws
-    ws-opts:
-      path: /pq/sg2
-      headers:
-        Host: p3sg4.pqjc.buzz
   - name: 🇺🇸美国凤凰城1-0.01倍
     type: vless
     server: 104.19.53.186
