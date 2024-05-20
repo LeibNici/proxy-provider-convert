@@ -1,5 +1,5 @@
 proxies:
-  - name: 剩余流量：880.9 GB
+  - name: 剩余流量：880.46 GB
     server: 163.123.192.149
     port: 443
     udp: true
@@ -95,7 +95,7 @@ proxies:
     sni: www.apple.com
     type: hysteria2
     password: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
-  - name: 🇯🇵日本亚马逊-hy2
+  - name: 🇯🇵日本 | 高速专线-hy2
     server: 205.178.183.99
     port: 443
     udp: true
@@ -103,7 +103,7 @@ proxies:
     sni: tv.apple.com
     type: hysteria2
     password: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
-  - name: 🇯🇵日本 | 高速专线-hy2
+  - name: 🇯🇵日本2 | 高速专线-hy2
     server: 158.179.178.233
     port: 443
     udp: true
