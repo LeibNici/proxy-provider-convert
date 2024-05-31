@@ -1,5 +1,5 @@
 proxies:
-  - name: 剩余流量：823 GB
+  - name: 剩余流量：822.88 GB
     server: 163.123.192.149
     port: 443
     udp: true
@@ -7,7 +7,7 @@ proxies:
     sni: apps.apple.com
     type: hysteria2
     password: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
-  - name: 距离下次重置剩余：5 天
+  - name: 距离下次重置剩余：4 天
     server: 163.123.192.149
     port: 443
     udp: true
@@ -373,6 +373,17 @@ proxies:
   - name: 联通/移动/电信推荐 | 🇰🇷韩国3-3倍
     type: vless
     server: 132.226.231.130
+    port: 443
+    uuid: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
+    udp: true
+    tls: true
+    skip-cert-verify: false
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    servername: dcpqkr.hnkkt.com
+  - name: 联通/移动/电信推荐 | 🇰🇷韩国4-3倍
+    type: vless
+    server: 193.123.232.182
     port: 443
     uuid: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
     udp: true
