@@ -1,5 +1,5 @@
 proxies:
-  - name: 剩余流量：984.76 GB
+  - name: 剩余流量：983.29 GB
     server: 163.123.192.149
     port: 443
     udp: true
@@ -129,6 +129,14 @@ proxies:
     password: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
   - name: 🇦🇪迪拜 | 高速专线-hy2
     server: 139.185.51.61
+    port: 443
+    udp: true
+    skip-cert-verify: true
+    sni: www.apple.com
+    type: hysteria2
+    password: 6024b2c4-5f46-42bb-a5b4-82c0ea7ae73f
+  - name: 🇦🇪迪拜2 | 高速专线-hy2
+    server: 193.123.76.84
     port: 443
     udp: true
     skip-cert-verify: true
