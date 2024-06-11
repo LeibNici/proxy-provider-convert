@@ -8,3 +8,6 @@ DOMAIN-KEYWORD,riduck
 DOMAIN-KEYWORD,komoot
 # > statshunters
 DOMAIN-KEYWORD,statshunters
+# > garmin
+DOMAIN-KEYWORD,garmin
+USER-AGENT,ConnectMobile*
