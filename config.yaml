@@ -49,9 +49,9 @@ dns:
 ######### 锚点 start #######
 subscribe:    	&subscribe 	{type: http,interval: 1800,health-check: {enable: true, url: http://www.gstatic.com/generate_204, interval: 1800} }
 use:  			&use 		{type: select,   use: [Subscribe] }
-p1:				&p1 		{type: select,   proxies: [🚀 手动切换, ♻️ 自动选择, 🇭🇰 香港节点, 🇯🇵 日本节点, 🇺🇲 美国节点, 🇨🇳 台湾节点, 🇸🇬 狮城节点, DIRECT] }		
+p1:				&p1 		{type: select,   proxies: [🚀 手动切换, ♻️ 自动选择, 🇭🇰 香港节点, 🇯🇵 日本节点, 🇺🇲 美国节点, 🇨🇳 台湾节点, 🇸🇬 狮城节点, 🇫🇷 法国节点, 🇩🇪 德国节点, 🇳🇱 荷兰节点, 🇧🇷 巴西节点, DIRECT] }		
 p2:				&p2 		{type: url-test, use: [Subscribe], url: https://www.gstatic.com/generate_204, interval: 300, tolerance: 50 }
-p3:				&p3 		{type: select,   proxies: [🔰 策略选择, 🚀 手动切换, ♻️ 自动选择, 🇭🇰 香港节点, 🇯🇵 日本节点, 🇺🇲 美国节点, 🇨🇳 台湾节点, 🇸🇬 狮城节点, DIRECT] }		
+p3:				&p3 		{type: select,   proxies: [🔰 策略选择, 🚀 手动切换, ♻️ 自动选择, 🇭🇰 香港节点, 🇯🇵 日本节点, 🇺🇲 美国节点, 🇨🇳 台湾节点, 🇸🇬 狮城节点, 🇫🇷 法国节点, 🇩🇪 德国节点, 🇳🇱 荷兰节点, 🇧🇷 巴西节点, DIRECT] }		
 c:    			&c 			{type: http,     behavior: classical, interval: 86400}
 d:    			&d 			{type: http,     behavior: domain,    interval: 86400}
 i:    			&i 			{type: http,     behavior: ipcidr,    interval: 86400}
@@ -60,7 +60,7 @@ i:    			&i 			{type: http,     behavior: ipcidr,    interval: 86400}
 proxy-providers:
   Subscribe:
     <<: *subscribe
-    url: http://sub-store.852098505.xyz/asdf1234/download/collection/myself
+    url: http://129.146.179.58:3001/asdf1234/download/%E8%B5%94%E9%92%B1
     path: ./proxy_providers/subscribe.yaml
 
 proxy-groups:
@@ -75,6 +75,10 @@ proxy-groups:
   - {name: 🇨🇳 台湾节点, <<: *p2, filter: "台|湾|TW|(?i)Taiwan"      }
   - {name: 🇺🇲 美国节点, <<: *p2, filter: "美|US|(?i)States|American"}
   - {name: 🇸🇬 狮城节点, <<: *p2, filter: "新|坡|SG|(?i)Singapore"    }
+  - {name: 🇫🇷 法国节点, <<: *p2, filter: "法|FR|(?i)France"    }
+  - {name: 🇩🇪 德国节点, <<: *p2, filter: "德|DE|(?i)Germany"    }
+  - {name: 🇳🇱 荷兰节点, <<: *p2, filter: "荷|兰|NL|(?i)Netherlands"    }
+  - {name: 🇧🇷 巴西节点, <<: *p2, filter: "巴|西|BR|(?i)Brazil"    }
 
 rule-providers:
   proxy: {<<: *c, url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Proxy/Proxy_Classical.yaml, path: ./RuleSet/proxy.yaml}
