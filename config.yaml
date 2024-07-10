@@ -94,6 +94,7 @@ rules:
   - RULE-SET,direct,DIRECT
   - RULE-SET,telegram,📲 电报信息
   - RULE-SET,emby,❤️ Emby公益服
+  - Process-Name,Proxifier.exe,❤️ Emby公益服
   - RULE-SET,proxy,🔰 策略选择
   - GEOIP,LAN,DIRECT
   - GEOIP,CN,DIRECT
