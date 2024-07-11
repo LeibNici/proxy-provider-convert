@@ -9,3 +9,5 @@ payload:
   # 垃圾公益服
   - DOMAIN-SUFFIX,xmsl.org
   - DOMAIN-SUFFIX,loseremby.org
+  # CC公益服
+  - DOMAIN-SUFFIX,coemn.com
