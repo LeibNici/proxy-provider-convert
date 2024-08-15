@@ -10,12 +10,12 @@ allow-lan: true      # 允许局域网连接
 bind-address: "*"    # 地址绑定
 mode: rule           # 规则模式
 log-level: info      # 日志级别
-ipv6: false          # IPV6开关
+ipv6: true          # IPV6开关
 external-controller: 0.0.0.0:9090
 
 dns:
-  enable: true       # 不使用系统 DNS
-  ipv6: false        # 关闭 IPV6
+  enable: false       # 不使用系统 DNS
+  ipv6: true        # 关闭 IPV6
   listen: 0.0.0.0:53 # dns 监听
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
@@ -83,7 +83,6 @@ proxy-groups:
 
 rule-providers:
   proxy: {<<: *c, url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Proxy/Proxy_Classical.yaml, path: ./RuleSet/proxy.yaml}
-  direct: {<<: *c, url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Direct/Direct.yaml, path: ./RuleSet/direct.yaml}
   telegram: {<<: *c, url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Telegram/Telegram.yaml, path: ./RuleSet/telegram.yaml}
   emby: {<<: *c, url: https://raw.githubusercontent.com/LeibNici/proxy-provider-convert/main/Rules/EmbyRule.txt, path: ./RuleSet/emby.yaml}
   sport: {<<: *c, url: https://raw.githubusercontent.com/LeibNici/proxy-provider-convert/main/Rules/SportRule.txt, path: ./RuleSet/sport.yaml}
@@ -91,7 +90,6 @@ rule-providers:
 rules:
   - IP-CIDR,129.146.179.58/8,DIRECT
   - RULE-SET,sport,🚴🏼‍♂️ 运动平台
-  - RULE-SET,direct,DIRECT
   - RULE-SET,telegram,📲 电报信息
   - RULE-SET,emby,❤️ Emby公益服
   - Process-Name,Proxifier.exe,❤️ Emby公益服
