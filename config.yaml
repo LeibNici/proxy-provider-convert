@@ -12,39 +12,16 @@ mode: rule           # 规则模式
 log-level: info      # 日志级别
 ipv6: true          # IPV6开关
 external-controller: 0.0.0.0:9090
-
 dns:
-  enable: false       # 不使用系统 DNS
-  ipv6: true        # 关闭 IPV6
-  listen: 0.0.0.0:53 # dns 监听
-  enhanced-mode: fake-ip
-  fake-ip-range: 198.18.0.1/16
-  fake-ip-filter:
-    - "*.lan"
-    - localhost.ptlogin2.qq.com
-    - +.srv.nintendo.net
-    - +.stun.playstation.net
-    - +.msftconnecttest.com
-    - +.msftncsi.com
-    - +.xboxlive.com
-    - msftconnecttest.com
-    - xbox.*.microsoft.com
-    - "*.battlenet.com.cn"
-    - "*.battlenet.com"
-    - "*.blzstatic.cn"
-    - "*.battle.net"
-  nameserver:        # 默认 DNS 服务
-    - 223.5.5.5
+  enable: true
+  nameserver:
     - 119.29.29.29
-  fallback:          # 国外 DNS 服务器
-    - https://cloudflare-dns.com/dns-query
-    - https://dns.google/dns-query
-    - https://dns.alidns.com/dns-query
-  fallback-filter:
-    geoip: true
-    geoip-code: CN
-    ipcidr:
-      - 240.0.0.0/4
+    - 223.5.5.5
+  fallback:
+    - 8.8.8.8
+    - 8.8.4.4
+    - tls://1.0.0.1:853
+    - tls://dns.google:853
 
 ######### 锚点 start #######
 subscribe:    	&subscribe 	{type: http,interval: 1800,health-check: {enable: true, url: http://www.gstatic.com/generate_204, interval: 1800} }
@@ -60,7 +37,7 @@ i:    			&i 			{type: http,     behavior: ipcidr,    interval: 86400}
 proxy-providers:
   Subscribe:
     <<: *subscribe
-    url: http://129.146.179.58:3001/asdf1234/download/collection/LargeFlow
+    url: https://sub.852098505.xyz/fnjakebfaefmkasdnfk312314/download/collection/use
     path: ./proxy_providers/subscribe.yaml
 
 proxy-groups:
