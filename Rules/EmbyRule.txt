@@ -1,13 +1,6 @@
 payload:
   # 常规emby服务器
   - DOMAIN-KEYWORD,emby
-  # misakaf公益服
-  - DOMAIN,stream1.misakaf.org
-  - DOMAIN,stream2.misakaf.org
-  - DOMAIN,stream3.misakaf.org
-  - DOMAIN,stream4.misakaf.org
   # 垃圾公益服
   - DOMAIN-SUFFIX,xmsl.org
-  - DOMAIN-SUFFIX,loseremby.org
-  # CC公益服
-  - DOMAIN-SUFFIX,coemn.com
+  - DOMAIN-SUFFIX,xxlb.net
