@@ -1,1 +1,6 @@
+# > 常规emby服务器
+DOMAIN-KEYWORD,emby
+
+# > 流媒体垃圾服务器
+DOMAIN-SUFFIX,xmsl.org
 DOMAIN-SUFFIX,xxlb.net
