@@ -37,7 +37,7 @@ i:    			&i 			{type: http,     behavior: ipcidr,    interval: 86400}
 proxy-providers:
   Subscribe:
     <<: *subscribe
-    url: https://sub.852098505.xyz/fnjakebfaefmkasdnfk312314/download/collection/use
+    url: https://sub.852098505.xyz/chm852098505/download/collection/emby
     path: ./proxy_providers/subscribe.yaml
 
 proxy-groups:
@@ -61,11 +61,10 @@ rule-providers:
   sport: {<<: *c, url: https://raw.githubusercontent.com/LeibNici/proxy-provider-convert/main/Rules/SportRule.txt, path: ./RuleSet/sport.yaml}
 
 rules:
-  - IP-CIDR,129.146.179.58/8,DIRECT
+  - DOMAIN-SUFFIX,852098505.xyz,🔰 策略选择
   - RULE-SET,sport,🚴🏼‍♂️ 运动平台
   - RULE-SET,telegram,📲 电报信息
   - RULE-SET,emby,❤️ Emby公益服
-  - Process-Name,Proxifier.exe,❤️ Emby公益服
   - RULE-SET,proxy,🔰 策略选择
   - GEOIP,LAN,DIRECT
   - GEOIP,CN,DIRECT
